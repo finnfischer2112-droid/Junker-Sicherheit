@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Junker-Sicherheit"
+version = "1.0.0"
+id = "artifacts/junker-sicherheit"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25726
+
+[services.development]
+run = "pnpm --filter @workspace/junker-sicherheit run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/junker-sicherheit", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/junker-sicherheit/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25726"
+BASE_PATH = "/"
