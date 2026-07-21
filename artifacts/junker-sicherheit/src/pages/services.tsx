@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { services } from '@/data/services';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/ui/fade-in';
+import { TrustBar } from '@/components/ui/trust-bar';
 
 export default function Services() {
   return (
@@ -22,6 +23,8 @@ export default function Services() {
           </FadeIn>
         </div>
       </div>
+
+      <TrustBar />
 
       {/* Services List */}
       <div className="py-24 bg-slate-50">

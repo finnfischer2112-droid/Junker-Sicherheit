@@ -2,6 +2,7 @@ import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ShieldCheck, Clock, Users, CheckCircle2, ChevronRight } from 'lucide-react';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/ui/fade-in';
+import { GoogleRatingBadge } from '@/components/ui/google-rating-badge';
 import { services } from '@/data/services';
 
 export default function Home() {
@@ -53,6 +54,9 @@ export default function Home() {
               <Button asChild size="lg" variant="outline" className="h-14 px-8 text-base bg-white/5 border-white/20 text-white hover:bg-white/10 hover:text-white backdrop-blur-sm">
                 <Link href="/dienstleistungen">Unsere Leistungen</Link>
               </Button>
+            </div>
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-xl px-4 py-2 mt-2">
+              <GoogleRatingBadge size="sm" />
             </div>
           </FadeIn>
         </div>
