@@ -6,6 +6,7 @@ import NotFound from '@/pages/not-found';
 import { Layout } from '@/components/layout';
 import Home from '@/pages/home';
 import Services from '@/pages/services';
+import ServiceDetail from '@/pages/service-detail';
 import References from '@/pages/references';
 import Contact from '@/pages/contact';
 import Imprint from '@/pages/imprint';
@@ -26,6 +27,7 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/dienstleistungen" component={Services} />
+        <Route path="/dienstleistungen/:slug" component={ServiceDetail} />
         <Route path="/referenzen" component={References} />
         <Route path="/kontakt" component={Contact} />
         <Route path="/impressum" component={Imprint} />
