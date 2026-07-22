@@ -78,10 +78,10 @@ export default function Home() {
       </section>
 
       {/* Logo Ticker */}
-      <div className="bg-white border-b border-slate-100 shadow-sm overflow-hidden py-6">
-        <div className="flex gap-16 animate-ticker whitespace-nowrap">
+      <div className="bg-white border-b border-slate-100 shadow-sm overflow-hidden py-8">
+        <div className="flex gap-20 animate-ticker whitespace-nowrap">
           {[...logoTicker, ...logoTicker].map((ref, idx) => (
-            <div key={idx} className="inline-flex items-center justify-center shrink-0 h-12 w-36">
+            <div key={idx} className="inline-flex items-center justify-center shrink-0 h-16 w-44">
               <img
                 src={`${import.meta.env.BASE_URL}images/referenzen/${ref.logo}`}
                 alt={ref.name}
