@@ -36,16 +36,16 @@ export default function Home() {
           <FadeIn delay={0.2} duration={0.8} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 text-white border border-primary/30 text-sm font-medium mb-6 backdrop-blur-sm shadow-sm">
               <ShieldCheck className="h-4 w-4" />
-              <span>Ihr Sicherheitspartner in Norddeutschland</span>
+              <span>Inhabergeführt · §34a zertifiziert · 24/7 erreichbar</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white leading-[1.1] mb-6 tracking-tight">
-              Haben Sie Fragen zum Thema Sicherheit, können wir mit <span className="text-primary">"SICHERHEIT"</span> helfen.
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-[1.1] mb-4 tracking-tight">
+              Sicherheitsdienst Hasloh – <span className="text-primary">Professioneller Schutz</span> für Hamburg & Schleswig-Holstein
             </h1>
-            
-            <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed">
-              Junker-Sicherheit ist Ihr inhabergeführtes Sicherheitsunternehmen aus Hasloh. Seriös, wach und verlässlich – mit persönlicher Handschlagqualität auf höchstem Niveau.
-            </p>
+
+            <h2 className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed font-normal">
+              Objektschutz, Veranstaltungssicherheit & Wachdienst aus Hasloh bei Hamburg – zuverlässig, diskret und rund um die Uhr. Ihr persönlicher Sicherheitspartner für die gesamte Metropolregion.
+            </h2>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="h-14 px-8 text-base font-bold shadow-lg hover:scale-105 transition-transform duration-300">
