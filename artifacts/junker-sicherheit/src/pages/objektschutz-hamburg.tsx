@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'wouter';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -284,6 +284,26 @@ const refLogos = [
 ];
 
 export default function ObjektschutzHamburg() {
+  useEffect(() => {
+    // Page-specific title & meta for this landing page
+    document.title = 'Objektschutz Hamburg | §34a-zertifiziert · 24/7 · Junker-Sicherheit';
+    const setMeta = (name: string, content: string, prop = false) => {
+      const sel = prop ? `meta[property="${name}"]` : `meta[name="${name}"]`;
+      let el = document.querySelector<HTMLMetaElement>(sel);
+      if (!el) { el = document.createElement('meta'); prop ? el.setAttribute('property', name) : el.setAttribute('name', name); document.head.appendChild(el); }
+      el.setAttribute('content', content);
+    };
+    const desc = 'Objektschutz Hamburg – §34a-zertifiziert, inhabergeführt, sofort einsatzbereit. Werksschutz, Revierdienste & Zugangskontrolle für Hamburger Unternehmen. Kostenlose Erstberatung anfordern!';
+    setMeta('description', desc);
+    setMeta('og:title', 'Objektschutz Hamburg | Junker-Sicherheit', true);
+    setMeta('og:description', desc, true);
+    setMeta('twitter:title', 'Objektschutz Hamburg | Junker-Sicherheit');
+    setMeta('twitter:description', desc);
+    return () => {
+      document.title = 'Sicherheitsdienst Hasloh & Hamburg | Junker-Sicherheit';
+    };
+  }, []);
+
   const scrollToForm = (e: React.MouseEvent) => {
     e.preventDefault();
     document.getElementById('kontakt-formular')?.scrollIntoView({ behavior: 'smooth' });
@@ -441,7 +461,7 @@ export default function ObjektschutzHamburg() {
         <div className="container mx-auto px-4 max-w-7xl">
           <FadeIn className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900">
-              Warum Hamburger Unternehmen Junker-Sicherheit vertrauen
+              Warum Hamburger Unternehmen ihren Objektschutz Junker-Sicherheit anvertrauen
             </h2>
           </FadeIn>
 
@@ -543,7 +563,7 @@ export default function ObjektschutzHamburg() {
               Objektschutz in ganz Hamburg – Wir kennen die Stadt
             </h2>
             <p className="text-slate-300 text-lg leading-relaxed">
-              Als Sicherheitsdienstleister aus Hasloh bei Hamburg sind wir in der gesamten
+              Als Objektschutz-Spezialist aus Hasloh bei Hamburg sind wir in der gesamten
               Hansestadt und der Metropolregion für Sie aktiv. Schnell, lokal, zuverlässig.
             </p>
           </FadeIn>
@@ -596,7 +616,7 @@ export default function ObjektschutzHamburg() {
         <div className="container mx-auto px-4 max-w-7xl">
           <FadeIn className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900">
-              Kunden, die uns in Hamburg vertrauen
+              Hamburger Unternehmen, die ihren Objektschutz Junker anvertrauen
             </h2>
           </FadeIn>
 
@@ -655,7 +675,7 @@ export default function ObjektschutzHamburg() {
         <div className="container mx-auto px-4 max-w-7xl">
           <FadeIn className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900">
-              So einfach kommen Sie zu Ihrem Sicherheitskonzept in Hamburg
+              So einfach starten Sie mit professionellem Objektschutz in Hamburg
             </h2>
           </FadeIn>
 
