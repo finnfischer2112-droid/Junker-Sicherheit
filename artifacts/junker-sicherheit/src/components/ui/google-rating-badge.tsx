@@ -18,8 +18,6 @@ export function GoogleRatingBadge({ size = "sm" }: GoogleRatingBadgeProps) {
       </span>
       {/* Rating value */}
       <span className={`font-bold text-slate-900 ${isLg ? "text-base" : "text-sm"}`}>5,0</span>
-      {/* Review count */}
-      <span className={`text-slate-500 ${isLg ? "text-sm" : "text-xs"}`}>47 Bewertungen</span>
       {/* Google label */}
       <span className={`font-semibold text-slate-600 ${isLg ? "text-sm" : "text-xs"}`}>Google</span>
     </a>
