@@ -5,6 +5,20 @@ import { FadeIn, StaggerContainer, StaggerItem } from '@/components/ui/fade-in';
 import { GoogleRatingBadge } from '@/components/ui/google-rating-badge';
 import { services } from '@/data/services';
 
+const logoTicker = [
+  { name: "Stadt Quickborn", logo: "quickborn.jpg" },
+  { name: "List auf Sylt", logo: "list-zipfelbund.jpg" },
+  { name: "Wacken Open Air", logo: "wacken.png" },
+  { name: "Bundesministerium für Gesundheit", logo: "bmg.jpg" },
+  { name: "GMSH", logo: "gmsh.jpg" },
+  { name: "H.C. Röver", logo: "hc-roever.jpg" },
+  { name: "Sartori & Berger", logo: "sartori-berger.png" },
+  { name: "Schleswig-Holstein", logo: "schleswig-holstein.jpg" },
+  { name: "JuRa Hasloh", logo: "jura-hasloh.jpg" },
+  { name: "SV Rugenbergen", logo: "sv-rugenbergen.jpg" },
+  { name: "Wirtschaftsjunioren", logo: "wirtschaftsjunioren.png" },
+];
+
 export default function Home() {
   const references = [
     { name: "Stadt Quickborn", logo: "quickborn.jpg" },
@@ -62,6 +76,21 @@ export default function Home() {
         </div>
         
       </section>
+
+      {/* Logo Ticker */}
+      <div className="bg-white border-b border-slate-100 shadow-sm overflow-hidden py-6">
+        <div className="flex gap-16 animate-ticker whitespace-nowrap">
+          {[...logoTicker, ...logoTicker].map((ref, idx) => (
+            <div key={idx} className="inline-flex items-center justify-center shrink-0 h-12 w-36">
+              <img
+                src={`${import.meta.env.BASE_URL}images/referenzen/${ref.logo}`}
+                alt={ref.name}
+                className="max-h-full max-w-full object-contain"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* Trust & About Section */}
       <section className="py-24 bg-white">

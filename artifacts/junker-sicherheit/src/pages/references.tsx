@@ -1,7 +1,6 @@
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/ui/fade-in';
-import { useEffect, useRef } from 'react';
 
 const references = [
   { name: "List auf Sylt / Zipfelbund", logo: "list-zipfelbund.jpg" },
@@ -18,30 +17,6 @@ const references = [
   { name: "Schleswig-Holstein", logo: "schleswig-holstein.jpg" },
 ];
 
-function LogoTicker() {
-  // Duplicate list so it scrolls seamlessly
-  const items = [...references, ...references];
-
-  return (
-    <div className="bg-white border-b border-slate-100 shadow-sm overflow-hidden py-6">
-      <div className="flex gap-16 animate-ticker whitespace-nowrap">
-        {items.map((ref, idx) => (
-          <div
-            key={idx}
-            className="inline-flex items-center justify-center shrink-0 h-14 w-36"
-          >
-            <img
-              src={`${import.meta.env.BASE_URL}images/referenzen/${ref.logo}`}
-              alt={ref.name}
-              className="max-h-full max-w-full object-contain"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 export default function References() {
   return (
     <div className="w-full min-h-[calc(100vh-140px)] bg-slate-50">
@@ -57,9 +32,6 @@ export default function References() {
           </FadeIn>
         </div>
       </div>
-
-      {/* Scrolling logo ticker */}
-      <LogoTicker />
 
       {/* Logo grid */}
       <div className="container mx-auto px-4 max-w-7xl py-24">
