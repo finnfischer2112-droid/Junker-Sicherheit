@@ -118,12 +118,12 @@ export default function Home() {
             
             <FadeIn direction="left" delay={0.2} className="flex-1">
               <div className="text-primary font-semibold tracking-wider uppercase mb-2 text-sm">Über uns</div>
-              <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6">Sicherheit ist Vertrauenssache.</h2>
+              <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6">Ihr Sicherheitsunternehmen aus Hasloh – persönlich, zuverlässig, 24/7.</h2>
               <p className="text-slate-600 text-lg mb-6 leading-relaxed">
-                Als inhabergeführtes Sicherheitsunternehmen legen wir größten Wert auf eine persönliche, transparente und vertrauensvolle Zusammenarbeit. Wir sind kein anonymer Großkonzern, sondern Ihr Partner aus der Region.
+                Junker-Sicherheit ist ein inhabergeführtes Bewachungsunternehmen mit Sitz in Hasloh bei Hamburg. Seit Jahren schützen wir Unternehmen, Kommunen und Veranstaltungen in Hamburg, Pinneberg, Quickborn und der gesamten Metropolregion – persönlich, diskret und zuverlässig.
               </p>
               <p className="text-slate-600 text-lg mb-8 leading-relaxed">
-                Unsere ausgesuchten und geschulten Mitarbeiter repräsentieren gemäß unserer Firmenphilosophie mit Verantwortungsbewusstsein Ihre Sicherheit. Wir wollen keine Fremdkörper sein, sondern feste Mitglieder Ihres Teams.
+                Unsere §34a-zertifizierten Mitarbeiter werden sorgfältig ausgewählt und regelmäßig geschult. Wir verstehen uns nicht als Fremdkörper, sondern als festen Teil Ihres Teams – mit norddeutscher Handschlagqualität auf höchstem Niveau.
               </p>
               
               <ul className="space-y-4 mb-8">
@@ -153,9 +153,9 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-7xl">
           <FadeIn className="text-center max-w-3xl mx-auto mb-16">
             <div className="text-primary font-semibold tracking-wider uppercase mb-2 text-sm">Unsere Expertise</div>
-            <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6">Umfassende Sicherheitslösungen</h2>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6">Sicherheitsdienstleistungen in Hamburg & Norddeutschland</h2>
             <p className="text-slate-600 text-lg">
-              Wir unterstützen Sie beratend und durchführend in allen sicherheitsrelevanten Bereichen, um Ihnen Verantwortung abzunehmen und Sie personell zu entlasten.
+              Von Objektschutz über Veranstaltungssicherheit bis hin zu Alarmanlagen – wir bieten maßgeschneiderte Sicherheitslösungen für Unternehmen, Kommunen und Privatkunden in Hamburg, Schleswig-Holstein und der gesamten Metropolregion.
             </p>
           </FadeIn>
 
@@ -199,8 +199,8 @@ export default function Home() {
         <div className="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-luminosity" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/generated/reception.jpg)` }}></div>
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <FadeIn className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-6">Warum Junker-Sicherheit?</h2>
-            <p className="text-slate-300 text-lg">Professioneller Schutz mit norddeutscher Zuverlässigkeit. Wir sind nicht nur Dienstleister, sondern Partner auf Augenhöhe.</p>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-6">Warum Kunden in Hamburg & Schleswig-Holstein auf Junker-Sicherheit vertrauen</h2>
+            <p className="text-slate-300 text-lg">Professioneller Schutz mit norddeutscher Zuverlässigkeit. Kein anonymes Großunternehmen – sondern ein persönlicher Partner, der Verantwortung übernimmt.</p>
           </FadeIn>
 
           <StaggerContainer className="grid md:grid-cols-3 gap-8">
@@ -242,7 +242,7 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-7xl">
           <FadeIn className="text-center max-w-3xl mx-auto mb-16">
             <div className="text-primary font-semibold tracking-wider uppercase mb-2 text-sm">Unser Prozess</div>
-            <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6">In 3 Schritten zu mehr Sicherheit</h2>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6">In 3 Schritten zu Ihrer individuellen Sicherheitslösung in Hasloh & Hamburg</h2>
           </FadeIn>
 
           <div className="grid md:grid-cols-3 gap-12 relative">
@@ -269,8 +269,8 @@ export default function Home() {
       <section className="py-20 bg-slate-50 border-t border-slate-100">
         <div className="container mx-auto px-4 max-w-7xl">
           <FadeIn className="text-center mb-12">
-            <h2 className="text-2xl font-heading font-bold text-slate-900 mb-2">Vertrauen ist die Basis unserer Arbeit</h2>
-            <p className="text-slate-500">Ein Auszug unserer geschätzten Kunden und Partner</p>
+            <h2 className="text-2xl font-heading font-bold text-slate-900 mb-2">Referenzen – Zufriedene Kunden in Hamburg & Norddeutschland</h2>
+            <p className="text-slate-500">Von Bundesbehörden bis Großveranstaltungen – ein Auszug unserer geschätzten Auftraggeber</p>
           </FadeIn>
 
           <StaggerContainer className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70">
@@ -303,9 +303,9 @@ export default function Home() {
         <FadeIn className="container mx-auto px-4 max-w-5xl relative z-10">
           <div className="bg-slate-900 rounded-3xl p-8 md:p-16 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
             <div className="flex-1 text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Bereit für ein sicheres Gefühl?</h2>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Kostenlosen Sicherheits-Check in Hasloh & Hamburg anfragen</h2>
               <p className="text-slate-300 text-lg mb-6">
-                Lassen Sie uns gemeinsam ein individuelles Sicherheitskonzept für Ihre Anforderungen erarbeiten. Unverbindlich und diskret.
+                Lassen Sie uns gemeinsam ein maßgeschneidertes Sicherheitskonzept für Ihr Unternehmen oder Ihre Veranstaltung erarbeiten – unverbindlich, diskret und ohne Risiko.
               </p>
               <ul className="space-y-3 mb-8 hidden md:block">
                 {['Kostenlose Vor-Ort-Analyse', 'Maßgeschneiderte Konzepte', 'Transparente Preisgestaltung'].map((item, i) => (

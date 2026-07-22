@@ -16,9 +16,9 @@ export default function Services() {
         </div>
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <FadeIn>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">Unsere Dienstleistungen</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">Sicherheitsdienstleistungen in Hamburg & Norddeutschland</h1>
             <p className="text-xl text-slate-300 max-w-3xl">
-              Professionelle Sicherheitskonzepte aus einer Hand. Wir bieten maßgeschneiderte Lösungen für Unternehmen, Kommunen und private Anforderungen in ganz Norddeutschland.
+              Professionelle Sicherheitskonzepte aus einer Hand – von Objektschutz und Wachdienst über Veranstaltungssicherheit bis hin zu Alarmanlagen. Maßgeschneidert für Unternehmen, Kommunen und Privatkunden in Hamburg, Pinneberg, Quickborn und ganz Schleswig-Holstein.
             </p>
           </FadeIn>
         </div>
@@ -28,6 +28,7 @@ export default function Services() {
 
       {/* Services List */}
       <div className="py-24 bg-slate-50">
+
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-1 gap-12 lg:gap-16">
             {services.map((service, index) => (
@@ -83,10 +84,10 @@ export default function Services() {
         <div className="container mx-auto px-4 max-w-4xl text-center relative z-10">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
-              Ihr Tätigkeitsfeld war nicht dabei?
+              Ihr Sicherheitsbedarf war nicht dabei?
             </h2>
             <p className="text-primary-foreground/90 text-lg md:text-xl mb-10">
-              Wie unsere Sicherheitsdienste Ihr spezielles Projekt unterstützen können, erläutern wir Ihnen gerne im persönlichen Dialog. Wir finden eine maßgeschneiderte Lösung.
+              Kein Problem – als inhabergeführtes Sicherheitsunternehmen aus Hasloh bei Hamburg entwickeln wir für jeden Bedarf eine individuelle Lösung. Sprechen Sie uns direkt an.
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-slate-100 font-bold h-14 px-8 shadow-xl hover:scale-105 transition-transform">
               <Link href="/kontakt">Persönliches Gespräch vereinbaren <ArrowRight className="ml-2 h-5 w-5" /></Link>

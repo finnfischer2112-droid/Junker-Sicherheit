@@ -72,9 +72,9 @@ export default function Contact() {
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/generated/reception.jpg)` }}></div>
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <FadeIn>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">Kontaktieren Sie uns</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">Sicherheitsdienst Hasloh kontaktieren – Kostenlose Erstberatung</h1>
             <p className="text-xl text-slate-300 max-w-2xl">
-              Wir sind 24 Stunden am Tag, 365 Tage im Jahr für Sie erreichbar. Schreiben Sie uns Ihr Anliegen oder rufen Sie uns direkt an.
+              Wir sind 24 Stunden am Tag, 365 Tage im Jahr für Sie erreichbar. Stellen Sie Ihre Anfrage – wir melden uns schnell, persönlich und unverbindlich zurück.
             </p>
           </FadeIn>
         </div>
