@@ -269,6 +269,20 @@ function KontaktFormular() {
 }
 
 // --- Main Page ---
+const refLogos = [
+  { name: "Stadt Quickborn", logo: "quickborn.jpg" },
+  { name: "List auf Sylt", logo: "list-zipfelbund.jpg" },
+  { name: "Wacken Open Air", logo: "wacken.png" },
+  { name: "Bundesministerium für Gesundheit", logo: "bmg.jpg" },
+  { name: "GMSH", logo: "gmsh.jpg" },
+  { name: "H.C. Röver", logo: "hc-roever.jpg" },
+  { name: "Sartori & Berger", logo: "sartori-berger.png" },
+  { name: "Schleswig-Holstein", logo: "schleswig-holstein.jpg" },
+  { name: "JuRa Hasloh", logo: "jura-hasloh.jpg" },
+  { name: "SV Rugenbergen", logo: "sv-rugenbergen.jpg" },
+  { name: "Wirtschaftsjunioren", logo: "wirtschaftsjunioren.png" },
+];
+
 export default function ObjektschutzHamburg() {
   const scrollToForm = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -361,6 +375,21 @@ export default function ObjektschutzHamburg() {
           SECTION 2 — TRUST BAR
       ═══════════════════════════════════════════ */}
       <TrustBar />
+
+      {/* Logo Ticker */}
+      <div className="bg-white border-b border-slate-100 shadow-sm overflow-hidden py-8">
+        <div className="flex gap-20 animate-ticker whitespace-nowrap">
+          {[...refLogos, ...refLogos].map((ref, idx) => (
+            <div key={idx} className="inline-flex items-center justify-center shrink-0 h-16 w-44">
+              <img
+                src={`${import.meta.env.BASE_URL}images/referenzen/${ref.logo}`}
+                alt={ref.name}
+                className="max-h-full max-w-full object-contain"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* ═══════════════════════════════════════════
           SECTION 3 — PROBLEM / SOLUTION
