@@ -7,6 +7,7 @@ import { Layout } from '@/components/layout';
 import Home from '@/pages/home';
 import Services from '@/pages/services';
 import ServiceDetail from '@/pages/service-detail';
+import ObjektschutzHamburg from '@/pages/objektschutz-hamburg';
 import References from '@/pages/references';
 import Contact from '@/pages/contact';
 import Imprint from '@/pages/imprint';
@@ -27,6 +28,7 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/dienstleistungen" component={Services} />
+        <Route path="/dienstleistungen/objektschutz" component={ObjektschutzHamburg} />
         <Route path="/dienstleistungen/:slug" component={ServiceDetail} />
         <Route path="/referenzen" component={References} />
         <Route path="/kontakt" component={Contact} />
