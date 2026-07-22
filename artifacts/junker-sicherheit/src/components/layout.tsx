@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { services } from '@/data/services';
 import { AnimatePresence, motion } from 'framer-motion';
+import { FloatingContactWidget } from '@/components/ui/floating-contact-widget';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
@@ -375,6 +376,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </footer>
+
+      <FloatingContactWidget />
     </div>
   );
 }
