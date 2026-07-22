@@ -96,23 +96,19 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
-            <FadeIn direction="right" className="flex-1 relative">
-              <div className="absolute inset-0 bg-primary/10 rounded-[2rem] transform translate-x-4 translate-y-4"></div>
-              <img 
-                src={`${import.meta.env.BASE_URL}images/guenter-junker.jpg`} 
-                alt="Günter Junker - Inhaber Junker-Sicherheit" 
-                className="w-full aspect-[4/5] object-cover rounded-[2rem] shadow-xl relative z-10"
-              />
-              <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl z-20 hidden md:block">
-                <div className="flex items-center gap-4">
-                  <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                    <ShieldCheck className="h-8 w-8" />
-                  </div>
-                  <div>
-                    <div className="font-heading font-bold text-2xl text-slate-900">100%</div>
-                    <div className="text-slate-600 text-sm">Verlässlichkeit</div>
-                  </div>
+            <FadeIn direction="right" className="flex-shrink-0 flex flex-col items-center gap-4">
+              <div className="relative">
+                <div className="h-52 w-52 rounded-full ring-4 ring-primary/15 ring-offset-4 overflow-hidden shadow-lg">
+                  <img 
+                    src={`${import.meta.env.BASE_URL}images/guenter-junker.jpg`} 
+                    alt="Günter Junker - Inhaber Junker-Sicherheit" 
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
+              </div>
+              <div className="text-center">
+                <div className="font-heading font-bold text-slate-900">Günter Junker</div>
+                <div className="text-sm text-slate-500">Inhaber &amp; Geschäftsführer</div>
               </div>
             </FadeIn>
             
