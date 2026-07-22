@@ -57,9 +57,9 @@ export default function Home() {
               Sicherheitsdienst Hasloh – <span className="text-primary">Professioneller Schutz</span> für Hamburg & Schleswig-Holstein
             </h1>
 
-            <h2 className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed font-normal">
+            <h3 className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed font-normal">
               Objektschutz, Veranstaltungssicherheit & Wachdienst aus Hasloh bei Hamburg – zuverlässig, diskret und rund um die Uhr. Ihr persönlicher Sicherheitspartner für die gesamte Metropolregion.
-            </h2>
+            </h3>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="h-14 px-8 text-base font-bold shadow-lg hover:scale-105 transition-transform duration-300">
