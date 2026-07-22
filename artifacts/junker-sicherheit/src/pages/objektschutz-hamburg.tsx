@@ -650,17 +650,15 @@ export default function ObjektschutzHamburg() {
                 <span className="ml-3 text-slate-500 text-sm font-medium">Google Bewertung</span>
               </div>
               <blockquote className="text-slate-700 text-lg leading-relaxed mb-5 italic">
-                „Junker-Sicherheit hat für unser Hamburger Lagergebäude ein maßgeschneidertes
-                Sicherheitskonzept entwickelt. Schnelle, zuverlässige Abwicklung – wir können das
-                Unternehmen nur empfehlen."
+                „Professionelles Unternehmen, vorbehaltlos zu empfehlen 👍. Beste Grüße Mohammad Saleh"
               </blockquote>
               <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-sm shrink-0">
-                  MH
+                <div className="h-10 w-10 rounded-full bg-[#E8710A] flex items-center justify-center text-white font-bold text-sm shrink-0">
+                  m
                 </div>
                 <div>
-                  <div className="font-semibold text-slate-900">M. Hartmann</div>
-                  <div className="text-slate-500 text-sm">Logistikleiter, Hamburg</div>
+                  <div className="font-semibold text-slate-900">Mohammed Saleh</div>
+                  <div className="text-slate-500 text-sm">Rezension aus Google · vor 2 Jahren</div>
                 </div>
               </div>
             </div>
