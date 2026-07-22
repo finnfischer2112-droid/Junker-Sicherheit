@@ -99,8 +99,8 @@ export default function Home() {
             <FadeIn direction="right" className="flex-1 relative">
               <div className="absolute inset-0 bg-primary/10 rounded-[2rem] transform translate-x-4 translate-y-4"></div>
               <img 
-                src={`${import.meta.env.BASE_URL}images/generated/about.jpg`} 
-                alt="Günter Junker - Junker Sicherheit" 
+                src={`${import.meta.env.BASE_URL}images/guenter-junker.jpg`} 
+                alt="Günter Junker - Inhaber Junker-Sicherheit" 
                 className="w-full aspect-[4/5] object-cover rounded-[2rem] shadow-xl relative z-10"
               />
               <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl z-20 hidden md:block">
