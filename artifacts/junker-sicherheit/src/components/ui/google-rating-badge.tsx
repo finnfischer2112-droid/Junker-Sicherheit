@@ -17,9 +17,9 @@ export function GoogleRatingBadge({ size = "sm" }: GoogleRatingBadgeProps) {
         {"★★★★★"}
       </span>
       {/* Rating value */}
-      <span className={`font-bold text-slate-900 ${isLg ? "text-base" : "text-sm"}`}>5,0</span>
+      <span className="font-bold text-sm text-background">5,0</span>
       {/* Google label */}
-      <span className={`font-semibold text-slate-600 ${isLg ? "text-sm" : "text-xs"}`}>Google</span>
+      <span className="font-semibold text-xs text-background">Google</span>
     </a>
   );
 }
