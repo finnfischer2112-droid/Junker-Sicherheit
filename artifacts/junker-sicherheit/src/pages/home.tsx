@@ -61,12 +61,6 @@ export default function Home() {
           </FadeIn>
         </div>
         
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce hidden md:block">
-          <div className="w-8 h-12 rounded-full border-2 border-white/30 flex justify-center pt-2">
-            <div className="w-1 h-3 bg-primary rounded-full"></div>
-          </div>
-        </div>
       </section>
 
       {/* Trust & About Section */}
