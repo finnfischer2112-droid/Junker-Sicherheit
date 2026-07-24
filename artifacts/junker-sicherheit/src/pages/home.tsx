@@ -54,7 +54,7 @@ export default function Home() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-[1.1] mb-4 tracking-tight">
-              Sicherheitsdienst Hasloh – <span className="text-primary">Professioneller Schutz</span> für Hamburg & Schleswig-Holstein
+              Sicherheitsdienst aus Hasloh – <span className="text-primary">Professioneller Schutz</span> für Hamburg & Schleswig-Holstein
             </h1>
 
             <h3 className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed font-normal">
@@ -238,7 +238,7 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-7xl">
           <FadeIn className="text-center max-w-3xl mx-auto mb-16">
             <div className="text-primary font-semibold tracking-wider uppercase mb-2 text-sm">Unser Prozess</div>
-            <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6">In 3 Schritten zu Ihrer individuellen Sicherheitslösung in Hasloh & Hamburg</h2>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6">In 3 Schritten zu Ihrer individuellen Sicherheitslösung aus Hasloh für Hamburg & Norddeutschland</h2>
           </FadeIn>
 
           <div className="grid md:grid-cols-3 gap-12 relative">
@@ -299,7 +299,7 @@ export default function Home() {
         <FadeIn className="container mx-auto px-4 max-w-5xl relative z-10">
           <div className="bg-slate-900 rounded-3xl p-8 md:p-16 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
             <div className="flex-1 text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Kostenlosen Sicherheits-Check in Hasloh & Hamburg anfragen</h2>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Kostenlosen Sicherheits-Check für Hamburg & Norddeutschland anfragen</h2>
               <p className="text-slate-300 text-lg mb-6">
                 Lassen Sie uns gemeinsam ein maßgeschneidertes Sicherheitskonzept für Ihr Unternehmen oder Ihre Veranstaltung erarbeiten – unverbindlich, diskret und ohne Risiko.
               </p>

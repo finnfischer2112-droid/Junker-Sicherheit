@@ -75,9 +75,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 max-w-7xl flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group relative z-50">
             <img 
-              src={`${import.meta.env.BASE_URL}images/logo-junker.png`} 
+              src={`${import.meta.env.BASE_URL}images/logo-junker-new.png`} 
               alt="Junker Sicherheit Logo" 
-              className="h-10 md:h-12 object-contain"
+              className="h-10 md:h-14 object-contain"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 e.currentTarget.parentElement?.classList.add('fallback-logo');
@@ -282,6 +282,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
               >
                 Kontakt
               </Link>
+              <Link
+                href="/karriere"
+                className={cn(
+                  "p-4 text-lg font-medium rounded-xl transition-colors",
+                  location === "/karriere" ? "bg-primary/10 text-primary" : "text-slate-700 hover:bg-slate-50"
+                )}
+              >
+                Karriere
+              </Link>
 
               <div className="mt-8 p-6 bg-slate-50 rounded-2xl border border-slate-100">
                 <div className="flex items-center gap-3 text-slate-700 mb-4">
@@ -333,6 +342,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/dienstleistungen" className="text-slate-400 hover:text-primary transition-colors">Dienstleistungen</Link></li>
                 <li><Link href="/referenzen" className="text-slate-400 hover:text-primary transition-colors">Referenzen</Link></li>
                 <li><Link href="/kontakt" className="text-slate-400 hover:text-primary transition-colors">Kontakt</Link></li>
+                <li><Link href="/karriere" className="text-slate-400 hover:text-primary transition-colors">Karriere</Link></li>
               </ul>
             </div>
 
@@ -361,6 +371,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     <Mail className="h-4 w-4" />
                   </div>
                   <a href="mailto:info@junker-sicherheit.de" className="text-slate-300 hover:text-white transition-colors block">info@junker-sicherheit.de</a>
+                </li>
+                <li className="pt-2 border-t border-slate-800">
+                  <Link href="/dienstleistungen/objektschutz-hamburg" className="text-slate-400 hover:text-primary transition-colors text-sm">
+                    Objektschutz Hamburg (Spezialseite)
+                  </Link>
                 </li>
               </ul>
             </div>

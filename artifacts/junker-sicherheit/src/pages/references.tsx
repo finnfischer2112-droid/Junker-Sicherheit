@@ -4,7 +4,6 @@ import { FadeIn, StaggerContainer, StaggerItem } from '@/components/ui/fade-in';
 
 const references = [
   { name: "List auf Sylt / Zipfelbund", logo: "list-zipfelbund.jpg" },
-  { name: "Erlebniszentrum Naturgewalten Sylt", logo: "list-zipfelbund.jpg" },
   { name: "Stadt Quickborn", logo: "quickborn.jpg" },
   { name: "Bundesministerium für Gesundheit", logo: "bmg.jpg" },
   { name: "GMSH", logo: "gmsh.jpg" },
