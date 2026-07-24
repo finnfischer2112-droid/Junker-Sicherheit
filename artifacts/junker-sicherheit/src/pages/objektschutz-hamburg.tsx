@@ -616,7 +616,7 @@ export default function ObjektschutzHamburg() {
         <div className="container mx-auto px-4 max-w-7xl">
           <FadeIn className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900">
-              Hamburger Unternehmen, die ihren Objektschutz Junker anvertrauen
+              Hamburger Unternehmen, die ihren Objektschutz Junker-Sicherheit anvertrauen
             </h2>
           </FadeIn>
 
