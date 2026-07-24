@@ -184,6 +184,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
             >
               Kontakt
             </Link>
+            <Link
+              href="/karriere"
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary py-4",
+                location === "/karriere" ? "text-primary" : "text-slate-600"
+              )}
+            >
+              Karriere
+            </Link>
 
             <Button asChild className="font-bold bg-primary hover:bg-primary/90 text-white shadow-md ml-2">
               <Link href="/kontakt">Jetzt anfragen</Link>
