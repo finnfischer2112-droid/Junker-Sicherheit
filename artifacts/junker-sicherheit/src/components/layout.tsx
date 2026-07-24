@@ -77,7 +77,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <img 
               src={`${import.meta.env.BASE_URL}images/logo-junker-new.png`} 
               alt="Junker Sicherheit Logo" 
-              className="h-10 md:h-14 object-contain"
+              className="h-10 md:h-14 object-contain mix-blend-multiply"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 e.currentTarget.parentElement?.classList.add('fallback-logo');
