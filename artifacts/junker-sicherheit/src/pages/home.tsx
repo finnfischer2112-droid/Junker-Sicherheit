@@ -119,7 +119,7 @@ export default function Home() {
                 Junker-Sicherheit ist ein inhabergeführtes Bewachungsunternehmen mit Sitz in Hasloh bei Hamburg. Seit Jahren schützen wir Unternehmen, Kommunen und Veranstaltungen in Hamburg, Pinneberg, Quickborn und der gesamten Metropolregion – persönlich, diskret und zuverlässig.
               </p>
               <p className="text-slate-600 text-lg mb-8 leading-relaxed">
-                Unsere §34a-zertifizierten Mitarbeiter werden sorgfältig ausgewählt und regelmäßig geschult. Wir verstehen uns nicht als Fremdkörper, sondern als festen Teil Ihres Teams – mit norddeutscher Handschlagqualität auf höchstem Niveau.
+                Unsere §34a ausgebildeten Mitarbeiter werden sorgfältig ausgewählt und regelmäßig geschult. Wir verstehen uns nicht als Fremdkörper, sondern als festen Teil Ihres Teams – mit norddeutscher Handschlagqualität auf höchstem Niveau.
               </p>
               
               <ul className="space-y-4 mb-8">

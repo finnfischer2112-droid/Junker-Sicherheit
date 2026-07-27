@@ -54,7 +54,7 @@ export const services = [
     localText: "Junker-Sicherheit ist in der Veranstaltungsbranche Norddeutschlands bestens vernetzt. Wir betreuen Events in Hamburg, Schleswig-Holstein und der gesamten Metropolregion – von kleinen Unternehmensveranstaltungen in der Hamburger Innenstadt bis hin zu Großevents wie dem Wacken Open Air.",
     faq: [
       { q: "Wie früh sollte ich für meine Veranstaltung eine Anfrage stellen?", a: "Wir empfehlen, uns so früh wie möglich zu kontaktieren – idealerweise mindestens 4–6 Wochen vor der Veranstaltung. Bei Großevents gerne noch früher, damit wir gemeinsam ein fundiertes Sicherheitskonzept erarbeiten können." },
-      { q: "Erstellen Sie auch behördlich geforderte Sicherheitskonzepte?", a: "Ja, wir erstellen auf Wunsch vollständige Sicherheitskonzepte, die den Anforderungen der zuständigen Behörden entsprechen – inklusive Flucht- und Rettungswegplanung sowie Brandschutzkonzept." },
+      { q: "Erstellen Sie auch behördlich geforderte Sicherheitskonzepte?", a: "Ja, wir erstellen auf Wunsch vollständige Sicherheitskonzepte, die den Anforderungen der zuständigen Behörden entsprechen." },
       { q: "Wie viele Sicherheitskräfte werden für mein Event benötigt?", a: "Das hängt von der Besucherzahl, der Örtlichkeit und dem Veranstaltungstyp ab. Wir führen vorab eine Risikoanalyse durch und ermitteln gemeinsam mit Ihnen den optimalen Personalschlüssel." },
       { q: "Übernehmen Sie auch den Brandschutz?", a: "Ja, wir stellen geschulte Brandschutzhelfer und Brandwachen gemäß den Vorgaben der Feuerwehr und des Ordnungsamts. Unsere Mitarbeiter sind speziell für vorbeugenden und abwehrenden Brandschutz ausgebildet." }
     ]
@@ -105,7 +105,7 @@ export const services = [
     usps: [
       "Speziell geschulte Brandwachen nach DGUV",
       "Flexible Bewachung – auch mit Hundeführer",
-      "Videoüberwachung und Zugangskontrollen inklusive"
+      "Flexible Einsatzplanung rund um die Uhr"
     ],
     localText: "Die Baubranche in Hamburg und Schleswig-Holstein boomt – und damit auch die Risiken auf Baustellen. Von Großprojekten in der HafenCity über Infrastrukturmaßnahmen in Pinneberg bis zu Wohnbauprojekten in Norderstedt: Junker-Sicherheit schützt Ihre Baustelle zuverlässig gegen Diebstahl, Vandalismus und unbefugten Zutritt.",
     faq: [
@@ -134,12 +134,12 @@ export const services = [
       "Umfassende Hafengeländesicherung",
       "Erfahrung mit Handels-, Passagier- und Privatschiffen"
     ],
-    localText: "Als Unternehmen in der Metropolregion Hamburg sind wir mit den maritimen Sicherheitsanforderungen des Hamburger Hafens, des Nord-Ostsee-Kanals und der schleswig-holsteinischen Küstenregion bestens vertraut. Wir kennen die regionalen Behörden und die spezifischen Anforderungen des ISPS-Codes im norddeutschen Seeverkehr.",
+    localText: "Als Unternehmen in der Metropolregion Hamburg sind wir mit den maritimen Sicherheitsanforderungen des Hamburger Hafens, des Nord-Ostsee-Kanals und der schleswig-holsteinischen Küstenregion bestens vertraut. Wir arbeiten den regionalen Behörden zu und unsere Mitarbeiter sind gem. den spezifischen Anforderungen des ISPS-Codes ausgebildet.",
     faq: [
       { q: "Was ist der ISPS-Code und warum ist er relevant?", a: "Der ISPS-Code (International Ship and Port Facility Security Code) ist ein internationales Regelwerk der IMO, das Sicherheitsstandards für Schiffe und Hafenanlagen vorschreibt. Die Einhaltung ist für viele Hafenbetreiber und Reedereien gesetzlich verpflichtend." },
       { q: "Was ist ein PFSO und welche Aufgaben hat er?", a: "Ein PFSO (Port Facility Security Officer) ist ein nach ISPS-Code ausgebildeter Sicherheitsbeauftragter für Hafenanlagen. Er erstellt Sicherheitspläne, koordiniert Schutzmaßnahmen und ist Ansprechpartner für Behörden und Schiffsführung." },
       { q: "Sichern Sie auch private Yachten und Marinas?", a: "Ja, unser maritimer Schutz umfasst sowohl kommerzielle Hafenanlagen als auch Marinas und private Yachthäfen. Wir erstellen individuelle Konzepte, die auf die jeweiligen Anforderungen zugeschnitten sind." },
-      { q: "Arbeiten Sie mit den Hafenbehörden zusammen?", a: "Selbstverständlich. Wir arbeiten eng mit den zuständigen Behörden wie dem Hafenamt, der Wasserschutzpolizei und der Bundespolizei zusammen und kennen die regionalen Vorschriften und Zuständigkeiten genau." }
+      { q: "Arbeiten Sie mit den Hafenbehörden zusammen?", a: "Selbstverständlich, wir arbeiten den zuständigen Behörden zu und arbeiten streng nach deren Vorgaben und Vorschriften." }
     ]
   },
   {
@@ -188,7 +188,7 @@ export const services = [
     ],
     image: "logistics.jpg",
     usps: [
-      "Lückenlose Kontrolle der gesamten Transportkette",
+      "Unterstützung bei der Transportkettensicherheit",
       "Bewaffnete und unbewaffnete Begleitfahrten",
       "Spezialisiert auf Logistikzentren und Lager"
     ],
@@ -239,7 +239,7 @@ export const services = [
       "Regionale Expertise",
       "Vorträge und Netzwerktreffen"
     ],
-    extra: "Schauen Sie auch gerne mal als Gast bei den Nordexperten vorbei und talken Sie mit Experten aus der Region.",
+    extra: "Schauen Sie auch gerne mal als Gast bei den Nordexperten e.V. vorbei und talken Sie mit Experten aus der Region.",
     image: "network.jpg",
     usps: [
       "Zugang zu einem starken regionalen Unternehmernetzwerk",
