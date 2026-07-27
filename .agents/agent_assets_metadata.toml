@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "t4_L_sunsmHcIJZJC7LHi"
+uri = "file://.agents/outputs/inpaint_result.png"
+type = "image"
+title = "Inpainting-Test (construction.jpg)"
