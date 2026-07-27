@@ -6,3 +6,9 @@ id = "t4_L_sunsmHcIJZJC7LHi"
 uri = "file://.agents/outputs/inpaint_result.png"
 type = "image"
 title = "Inpainting-Test (construction.jpg)"
+
+[[outputs]]
+id = "yBqffJ0VVVCdJVb91_kby"
+uri = "file://.agents/outputs/objektschutz_preview.jpg"
+type = "image"
+title = "Objektschutz – Vorschau neues Bild"
