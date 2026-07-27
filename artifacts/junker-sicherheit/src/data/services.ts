@@ -134,6 +134,7 @@ export const services = [
       "Umfassende Hafengeländesicherung",
       "Erfahrung mit Handels-, Passagier- und Privatschiffen"
     ],
+    headingTitle: "Professionelle Maritime Sicherheit in Hamburg & Norddeutschland",
     localText: "Als Unternehmen in der Metropolregion Hamburg sind wir mit den maritimen Sicherheitsanforderungen des Hamburger Hafens, des Nord-Ostsee-Kanals und der schleswig-holsteinischen Küstenregion bestens vertraut. Wir arbeiten den regionalen Behörden zu und unsere Mitarbeiter sind gem. den spezifischen Anforderungen des ISPS-Codes ausgebildet.",
     faq: [
       { q: "Was ist der ISPS-Code und warum ist er relevant?", a: "Der ISPS-Code (International Ship and Port Facility Security Code) ist ein internationales Regelwerk der IMO, das Sicherheitsstandards für Schiffe und Hafenanlagen vorschreibt. Die Einhaltung ist für viele Hafenbetreiber und Reedereien gesetzlich verpflichtend." },

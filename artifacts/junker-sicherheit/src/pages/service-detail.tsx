@@ -91,7 +91,7 @@ export default function ServiceDetail() {
             <FadeIn>
               <div className="prose prose-slate prose-lg max-w-none">
                 <h2 className="text-3xl font-heading font-bold text-slate-900 mb-6">
-                  {service.title} in Hamburg &amp; Norddeutschland
+                  {'headingTitle' in service && service.headingTitle ? service.headingTitle : `${service.title} in Hamburg & Norddeutschland`}
                 </h2>
                 <p className="text-slate-600 leading-relaxed whitespace-pre-line">
                   {service.description}
