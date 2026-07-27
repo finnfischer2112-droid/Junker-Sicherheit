@@ -1,0 +1,31 @@
+{
+  "junker_text": {
+    "pages": 1,
+    "images": [],
+    "text_preview": "Junker Sicherheit: Erfahrung, Verlässlichkeit und Schutz aus einer Hand \nJunker Sicherheit steht seit Jahren für zuverlässigen Objekt- und Veranstaltungsschutz in \nSchleswig-Holstein, Hamburg und Niedersachsen. Das Unternehmen arbeitet diskret, schnell \nund mit einem hohen Qualitätsanspruch – rund um die Uhr und an 365 Tagen im Jahr. Gründer \nGünther Junker bringt selbst langjährige Erfahrung aus der Sicherheitsbranche mit und wagte \n2017 den Schritt in die Selbstständigkeit. \nBesonders stolz ist das Unternehmen auf sein Team: Viele Mitarbeiter verfügen über mehr als 20 \nJahre Berufserfahrung und sind umfassend ausgebildet. Diese Expertise zeigt sich im täglichen \nEinsatz – ob bei der Bewachung von Objekten, der Alarmverfolgung, der Baustellenabsicherung \noder der Maritimen Sicherheit. Auch bei Firmenfeiern, privaten Veranstaltungen oder Großevents \nsorgen die freundlichen Sicherheitskräfte für einen reibungslosen Ablauf und ein sicheres \nUmfeld. \nJunker Sicherheit verbindet professionelle Strukturen mit persönlicher Betreuung. Kunden \nprofitieren von kurzen Wegen, hoher Flexibilität und einem Team, das Sicherheit nicht nur \ngewährleistet, sondern lebt. Weitere Infos gibt es auf der Homepage unter www.junker-\nsicherheit.de. \nAktuell sucht das Unternehmen eine qualifizierte Sicherheitskraft mit bestandener \nSachkundeprüfung nach §34a GewO. Bewerbungsunterlagen können per Mail an info@junker-\nsicherheit.de gesendet werden. \n"
+  },
+  "bericht": {
+    "pages": 1,
+    "images": [
+      {
+        "file": "bericht_p1_img0.jpeg",
+        "w": 1654,
+        "h": 2340,
+        "page": 1
+      }
+    ],
+    "text_preview": ""
+  },
+  "umschau": {
+    "pages": 1,
+    "images": [
+      {
+        "file": "umschau_p1_img0.jpeg",
+        "w": 1654,
+        "h": 2340,
+        "page": 1
+      }
+    ],
+    "text_preview": ""
+  }
+}

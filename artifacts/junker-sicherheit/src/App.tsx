@@ -14,6 +14,7 @@ import Contact from '@/pages/contact';
 import Imprint from '@/pages/imprint';
 import Privacy from '@/pages/privacy';
 import Karriere from '@/pages/karriere';
+import Galerie from '@/pages/galerie';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -37,6 +38,7 @@ function Router() {
         <Route path="/kontakt" component={Contact} />
         <Route path="/impressum" component={Imprint} />
         <Route path="/datenschutz" component={Privacy} />
+        <Route path="/galerie" component={Galerie} />
         <Route path="/karriere" component={Karriere} />
         <Route component={NotFound} />
       </Switch>

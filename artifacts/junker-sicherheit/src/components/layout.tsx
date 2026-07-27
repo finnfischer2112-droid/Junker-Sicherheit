@@ -185,6 +185,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
               Kontakt
             </Link>
             <Link
+              href="/galerie"
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary py-4",
+                location === "/galerie" ? "text-primary" : "text-slate-600"
+              )}
+            >
+              Galerie
+            </Link>
+            <Link
               href="/karriere"
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary py-4",
