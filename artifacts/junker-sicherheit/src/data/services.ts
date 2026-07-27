@@ -105,7 +105,7 @@ export const services = [
     usps: [
       "Speziell geschulte Brandwachen nach DGUV",
       "Flexible Bewachung – auch mit Hundeführer",
-      "Flexible Einsatzplanung rund um die Uhr"
+      "Videoüberwachung und Zugangskontrollen"
     ],
     localText: "Die Baubranche in Hamburg und Schleswig-Holstein boomt – und damit auch die Risiken auf Baustellen. Von Großprojekten in der HafenCity über Infrastrukturmaßnahmen in Pinneberg bis zu Wohnbauprojekten in Norderstedt: Junker-Sicherheit schützt Ihre Baustelle zuverlässig gegen Diebstahl, Vandalismus und unbefugten Zutritt.",
     faq: [
