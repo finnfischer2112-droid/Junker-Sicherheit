@@ -220,6 +220,7 @@ export const services = [
       "Lösungen für Gewerbe und Privat aus einer Hand",
       "Nahtlose Anbindung an Notruf-Service-Leitstelle"
     ],
+    headingTitle: "Professionelle Alarmanlagen & Sicherheitstechnik in Hamburg & Norddeutschland",
     localText: "Junker-Sicherheit berät Unternehmen und Privatpersonen in Hamburg und Schleswig-Holstein zu allen Fragen der Sicherheitstechnik. Ob Einfamilienhaus in Norderstedt, Ladengeschäft in Hamburg-Eimsbüttel oder Bürokomplex in Pinneberg – wir kennen die regionalen Gegebenheiten und die lokalen Einbruchstatistiken.",
     faq: [
       { q: "Was kostet eine Alarmanlage für ein Einfamilienhaus?", a: "Die Kosten variieren je nach Objekt, gewünschtem Schutzumfang und eingesetzter Technik. Nach einer kostenlosen Vor-Ort-Begehung erhalten Sie von uns ein transparentes, unverbindliches Angebot – ohne versteckte Kosten." },
