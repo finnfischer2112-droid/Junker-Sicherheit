@@ -7,85 +7,358 @@ export default function Privacy() {
         <div className="bg-white p-8 md:p-12 lg:p-16 rounded-[2rem] shadow-sm border border-slate-200 prose prose-slate prose-lg max-w-none">
           <h1 className="font-heading font-bold text-4xl md:text-5xl mb-12 text-slate-900">Datenschutzerklärung</h1>
 
-          <h2 className="font-heading text-2xl text-slate-900">1. Datenschutz auf einen Blick</h2>
-          <h3 className="text-xl text-slate-800">Allgemeine Hinweise</h3>
+          {/* 1. Vorwort */}
+          <h2 className="font-heading text-2xl text-slate-900">1. Vorwort</h2>
           <p>
-            Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
-          </p>
-          
-          <h3 className="text-xl text-slate-800 mt-8">Datenerfassung auf dieser Website</h3>
-          <h4>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h4>
-          <p>
-            Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.
-          </p>
-
-          <h4>Wie erfassen wir Ihre Daten?</h4>
-          <p>
-            Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.
+            Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für uns. Eine Nutzung unserer Internetseiten ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.
           </p>
           <p>
-            Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
+            Die Verarbeitung personenbezogener Daten, beispielsweise des Namens, der Anschrift, E-Mail-Adresse oder Telefonnummer einer betroffenen Person, erfolgt stets im Einklang mit der Datenschutz-Grundverordnung und in Übereinstimmung mit den für uns geltenden landesspezifischen Datenschutzbestimmungen. Mittels dieser Datenschutzerklärung möchten wir die Öffentlichkeit über Art, Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten personenbezogenen Daten informieren. Ferner werden betroffene Personen mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte aufgeklärt.
+          </p>
+          <p>
+            Wir haben als verantwortungsbewusstes Unternehmen zahlreiche technische und organisatorische Maßnahmen (TOM's) umgesetzt, um einen möglichst lückenlosen Schutz der verarbeiteten personenbezogenen Daten sicherzustellen. Dennoch können z.B. Internetbasierte Datenübertragungen grundsätzlich Sicherheitslücken aufweisen, sodass ein absoluter Schutz nicht gewährleistet werden kann. Aus diesem Grund steht es jeder betroffenen Person frei, personenbezogene Daten auch auf alternativen Wegen, beispielsweise telefonisch oder postalisch, an uns zu übermitteln.
           </p>
 
-          <h4>Wofür nutzen wir Ihre Daten?</h4>
+          {/* 2. Name und Anschrift */}
+          <h2 className="font-heading text-2xl text-slate-900 mt-10">2. Name und Anschrift des für die Verarbeitung Verantwortlichen</h2>
           <p>
-            Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.
+            Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:
           </p>
-
-          <h4>Welche Rechte haben Sie bezüglich Ihrer Daten?</h4>
           <p>
-            Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
-          </p>
-
-          <h2 className="font-heading text-2xl text-slate-900 mt-12">2. Hosting</h2>
-          <p>Wir hosten die Inhalte unserer Website bei folgenden Anbietern:</p>
-          <h3 className="text-xl text-slate-800">Externes Hosting</h3>
-          <p>
-            Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.
-          </p>
-
-          <h2 className="font-heading text-2xl text-slate-900 mt-12">3. Allgemeine Hinweise und Pflichtinformationen</h2>
-          <h3 className="text-xl text-slate-800">Datenschutz</h3>
-          <p>
-            Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
-          </p>
-
-          <h3 className="text-xl text-slate-800 mt-8">Hinweis zur verantwortlichen Stelle</h3>
-          <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
-          <p className="bg-slate-50 p-6 rounded-xl border border-slate-100 mt-4">
-            <strong>Junker-Sicherheit</strong><br />
-            Günter Junker<br />
+            Junker-Sicherheit<br />
+            Inhaber: Günter Junker<br />
             Garstedter Weg 35<br />
             25474 Hasloh<br />
             <br />
-            Telefon: +49 176 214 880 84<br />
-            E-Mail: g.junker@junker-sicherheit.de
-          </p>
-          <p className="mt-4">
-            Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
+            Telefon: +49 (0) 176 / 214 880 84<br />
+            E-Mail: <a href="mailto:info@junker-sicherheit.de">info@junker-sicherheit.de</a>
           </p>
 
-          <h3 className="text-xl text-slate-800 mt-8">Speicherdauer</h3>
+          {/* 3. Datenschutzbeauftragter */}
+          <h2 className="font-heading text-2xl text-slate-900 mt-10">3. Name und Anschrift des Datenschutzbeauftragten</h2>
           <p>
-            Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.
+            Wir haben uns für einen externen Datenschutzbeauftragten entschieden. Für alle Fragen hinsichtlich des Datenschutzes wenden Sie sich bitte an:
+          </p>
+          <p>
+            Dirk Jungkind<br />
+            c/o JUNDI Consult GmbH<br />
+            Möllner Landstraße 1 a in 21465 Reinbek<br />
+            <br />
+            Telefon: +49 (40) 72 00 62 16<br />
+            Fax: +49 (40) 72 00 62 17<br />
+            Email: <a href="mailto:Dirk.Jungkind@jundiconsult.de">Dirk.Jungkind@jundiconsult.de</a><br />
+            Internet: <a href="https://www.jundiconsult.de" target="_blank" rel="noopener noreferrer">www.jundiconsult.de</a>
           </p>
 
-          <h2 className="font-heading text-2xl text-slate-900 mt-12">4. Datenerfassung auf dieser Website</h2>
-          <h3 className="text-xl text-slate-800">Kontaktformular</h3>
+          {/* 4. Begriffsbestimmungen */}
+          <h2 className="font-heading text-2xl text-slate-900 mt-10">4. Begriffsbestimmungen</h2>
           <p>
-            Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+            Diese Datenschutzerklärung beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der Datenschutz-Grundverordnung (DSGVO) verwendet wurden. Diese Datenschutzerklärung soll sowohl für die Öffentlichkeit als auch für unsere Kunden und Geschäftspartner einfach lesbar und verständlich sein. Um dies zu gewährleisten, möchten wir vorab die verwendeten Begrifflichkeiten erläutern.
+          </p>
+          <p>Wir verwenden in dieser Datenschutzerklärung unter anderem die folgenden Begriffe:</p>
+
+          <p><strong>a) personenbezogene Daten</strong><br />
+          Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden „betroffene Person") beziehen. Als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind, identifiziert werden kann.</p>
+
+          <p><strong>b) betroffene Person</strong><br />
+          Betroffene Person ist jede identifizierte oder identifizierbare natürliche Person, deren personenbezogene Daten von dem für die Verarbeitung Verantwortlichen verarbeitet werden.</p>
+
+          <p><strong>c) Verarbeitung</strong><br />
+          Verarbeitung ist jeder, mit oder ohne Hilfe automatisierter Verfahren, ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten wie das Erheben, das Erfassen, die Organisation, das Ordnen, die Speicherung, die Anpassung oder Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung, Verbreitung oder eine andere Form der Bereitstellung, den Abgleich oder die Verknüpfung, die Einschränkung, das Löschen oder die Vernichtung.</p>
+
+          <p><strong>d) Einschränkung der Verarbeitung</strong><br />
+          Einschränkung der Verarbeitung ist die Markierung gespeicherter personenbezogener Daten mit dem Ziel, ihre künftige Verarbeitung einzuschränken.</p>
+
+          <p><strong>e) Profiling</strong><br />
+          Profiling ist jede Art der automatisierten Verarbeitung personenbezogener Daten, die darin besteht, dass diese personenbezogenen Daten verwendet werden, um bestimmte persönliche Aspekte, die sich auf eine natürliche Person beziehen, zu bewerten, insbesondere, um Aspekte bezüglich Arbeitsleistung, wirtschaftlicher Lage, Gesundheit, persönlicher Vorlieben, Interessen, Zuverlässigkeit, Verhalten, Aufenthaltsort oder Ortswechsel dieser natürlichen Person zu analysieren oder vorherzusagen.</p>
+
+          <p><strong>f) Pseudonymisierung</strong><br />
+          Pseudonymisierung ist die Verarbeitung personenbezogener Daten in einer Weise, auf welche die personenbezogenen Daten ohne Hinzuziehung zusätzlicher Informationen nicht mehr einer spezifischen betroffenen Person zugeordnet werden können, sofern diese zusätzlichen Informationen gesondert aufbewahrt werden und technischen und organisatorischen Maßnahmen unterliegen, die gewährleisten, dass die personenbezogenen Daten nicht einer identifizierten oder identifizierbaren natürlichen Person zugewiesen werden.</p>
+
+          <p><strong>g) Verantwortlicher oder für die Verarbeitung Verantwortlicher</strong><br />
+          Verantwortlicher oder für die Verarbeitung Verantwortlicher ist die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet. Sind die Zwecke und Mittel dieser Verarbeitung durch das Unionsrecht oder das Recht der Mitgliedstaaten vorgegeben, so kann der Verantwortliche beziehungsweise können die bestimmten Kriterien seiner Benennung nach dem Unionsrecht oder dem Recht der Mitgliedstaaten vorgesehen werden.</p>
+
+          <p><strong>h) Auftragsverarbeiter</strong><br />
+          Auftragsverarbeiter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.</p>
+
+          <p><strong>i) Empfänger</strong><br />
+          Empfänger ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, der personenbezogene Daten offengelegt werden, unabhängig davon, ob es sich bei ihr um einen Dritten handelt oder nicht. Behörden, die im Rahmen eines bestimmten Untersuchungsauftrags nach dem Unionsrecht oder dem Recht der Mitgliedstaaten möglicherweise personenbezogene Daten erhalten, gelten jedoch nicht als Empfänger.</p>
+
+          <p><strong>j) Dritter</strong><br />
+          Dritter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle außer der betroffenen Person, dem Verantwortlichen, dem Auftragsverarbeiter und den Personen, die unter der unmittelbaren Verantwortung des Verantwortlichen oder des Auftragsverarbeiters befugt sind, die personenbezogenen Daten zu verarbeiten.</p>
+
+          <p><strong>k) Einwilligung</strong><br />
+          Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten Fall in informierter Weise und unmissverständlich abgegebene Willensbekundung in Form einer Erklärung oder einer sonstigen eindeutigen bestätigenden Handlung, mit der die betroffene Person zu verstehen gibt, dass sie mit der Verarbeitung der sie betreffenden personenbezogenen Daten einverstanden ist.</p>
+
+          {/* 5. Rechte der Betroffenen */}
+          <h2 className="font-heading text-2xl text-slate-900 mt-10">5. Rechte der Betroffenen</h2>
+          <p>
+            Werden personenbezogene Daten von Ihnen verarbeitet, sind Sie Betroffener i.S.d. DSGVO und es stehen Ihnen folgende Rechte gegenüber dem Verantwortlichen zu:
+          </p>
+
+          <p><strong>a) Recht auf Widerruf einer datenschutzrechtlichen Einwilligung (Art. 7 Abs. 3 DSGVO)</strong><br />
+          Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, eine Einwilligung zur Verarbeitung personenbezogener Daten jederzeit zu widerrufen.<br />
+          Möchte die betroffene Person ihr Recht auf Widerruf einer Einwilligung geltend machen, kann sie sich hierzu jederzeit an uns wenden.</p>
+
+          <p><strong>b) Recht auf Auskunft (Art. 15 DSGVO)</strong><br />
+          Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, jederzeit von dem für die Verarbeitung Verantwortlichen unentgeltliche Auskunft über die zu seiner Person gespeicherten personenbezogenen Daten und eine Kopie dieser Auskunft zu erhalten. Ferner hat der Europäische Richtlinien- und Verordnungsgeber der betroffenen Person Auskunft über folgende Informationen zugestanden:</p>
+          <ul>
+            <li>Die Verarbeitungszwecke</li>
+            <li>Die Kategorien personenbezogener Daten, die verarbeitet werden</li>
+            <li>Die Empfänger oder Kategorien von Empfängern, gegenüber denen die personenbezogenen Daten offengelegt worden sind oder noch offengelegt werden, insbesondere bei Empfängern in Drittländern oder bei internationalen Organisationen</li>
+            <li>Falls möglich die geplante Dauer, für die die personenbezogenen Daten gespeichert werden, oder, falls dies nicht möglich ist, die Kriterien für die Festlegung dieser Dauer</li>
+            <li>Das Bestehen eines Rechts auf Berichtigung oder Löschung der sie betreffenden personenbezogenen Daten oder auf Einschränkung der Verarbeitung durch den Verantwortlichen oder eines Widerspruchsrechts gegen diese Verarbeitung</li>
+            <li>Das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde</li>
+            <li>Wenn die personenbezogenen Daten nicht bei der betroffenen Person erhoben werden: Alle verfügbaren Informationen über die Herkunft der Daten</li>
+            <li>Das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling gemäß Artikel 22 Abs.1 und 4 DS-GVO und - zumindest in diesen Fällen - aussagekräftige Informationen über die involvierte Logik sowie die Tragweite und die angestrebten Auswirkungen einer derartigen Verarbeitung für die betroffene Person</li>
+          </ul>
+          <p>
+            Ferner steht der betroffenen Person ein Auskunftsrecht darüber zu, ob personenbezogene Daten an ein Drittland oder an eine internationale Organisation übermittelt wurden. Sofern dies der Fall ist, so steht der betroffenen Person im Übrigen das Recht zu, Auskunft über die geeigneten Garantien im Zusammenhang mit der Übermittlung zu erhalten.
+          </p>
+          <p>Möchte eine betroffene Person dieses Auskunftsrecht in Anspruch nehmen, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.</p>
+
+          <p><strong>c) Recht auf Berichtigung (Art. 16 DSGVO)</strong><br />
+          Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, die unverzügliche Berichtigung sie betreffender unrichtiger personenbezogener Daten zu verlangen. Ferner steht der betroffenen Person das Recht zu, unter Berücksichtigung der Zwecke der Verarbeitung, die Vervollständigung unvollständiger personenbezogener Daten - auch mittels einer ergänzenden Erklärung - zu verlangen.<br />
+          Möchte eine betroffene Person dieses Berichtigungsrecht in Anspruch nehmen, kann sie sich hierzu jederzeit an uns wenden.</p>
+
+          <p><strong>d) Recht auf Löschung („Recht auf Vergessen werden") (Art. 17 DSGVO)</strong><br />
+          Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, von dem Verantwortlichen zu verlangen, dass die sie betreffenden personenbezogenen Daten unverzüglich gelöscht werden, sofern einer der folgenden Gründe zutrifft und soweit die Verarbeitung nicht erforderlich ist:</p>
+          <ul>
+            <li>Die personenbezogenen Daten wurden für solche Zwecke erhoben oder auf sonstige Weise verarbeitet, für welche sie nicht mehr notwendig sind.</li>
+            <li>Die betroffene Person widerruft ihre Einwilligung, auf die sich die Verarbeitung gemäß Art. 6 Abs. 1 Buchstabe a DSGVO oder Art. 9 Abs. 2 Buchstabe a DSGVO stützte, und es fehlt an einer anderweitigen Rechtsgrundlage für die Verarbeitung.</li>
+            <li>Die betroffene Person legt gemäß Art. 21 Abs. 1 DSGVO Widerspruch gegen die Verarbeitung ein, und es liegen keine vorrangigen berechtigten Gründe für die Verarbeitung vor, oder die betroffene Person legt gemäß Art. 21 Abs. 2 DSGVO Widerspruch gegen die Verarbeitung ein.</li>
+            <li>Die personenbezogenen Daten wurden unrechtmäßig verarbeitet.</li>
+            <li>Die Löschung der personenbezogenen Daten ist zur Erfüllung einer rechtlichen Verpflichtung nach dem Unionsrecht oder dem Recht der Mitgliedstaaten erforderlich, dem der Verantwortliche unterliegt.</li>
+            <li>Die personenbezogenen Daten wurden in Bezug auf angebotene Dienste der Informationsgesellschaft gemäß Art. 8 Abs. 1 DSGVO erhoben.</li>
+          </ul>
+          <p>
+            Sofern einer der oben genannten Gründe zutrifft und eine betroffene Person die Löschung von personenbezogenen Daten, die bei uns gespeichert sind, veranlassen möchte, kann sie sich hierzu uns wenden. Es wird dann veranlasst, dass dem Löschverlangen unverzüglich nachgekommen wird.
           </p>
           <p>
-            Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.
+            Wurden die personenbezogenen Daten von uns öffentlich gemacht und ist unser Unternehmen als Verantwortlicher gemäß Art. 17 Abs. 1 DSGVO zur Löschung der personenbezogenen Daten verpflichtet, so treffen wir unter Berücksichtigung der verfügbaren Technologie und der Implementierungskosten, angemessene Maßnahmen, auch technischer Art, um andere für die Datenverarbeitung Verantwortliche, welche die veröffentlichten personenbezogenen Daten verarbeiten, darüber in Kenntnis zu setzen, dass die betroffene Person von diesen anderen für die Datenverarbeitung Verantwortlichen die Löschung sämtlicher Links zu diesen personenbezogenen Daten oder von Kopien oder Replikationen dieser personenbezogenen Daten verlangt hat, soweit die Verarbeitung nicht erforderlich ist. Wir werden im Einzelfall das Notwendige veranlassen.
           </p>
-          <p>
-            Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.
-          </p>
-          
-          <h3 className="text-xl text-slate-800 mt-8">Anfrage per E-Mail, Telefon oder Telefax</h3>
-          <p>
-            Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
-          </p>
+
+          <p><strong>e) Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</strong><br />
+          Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, von dem Verantwortlichen die Einschränkung der Verarbeitung zu verlangen, wenn eine der folgenden Voraussetzungen gegeben ist:</p>
+          <ul>
+            <li>Die Richtigkeit der personenbezogenen Daten wird von der betroffenen Person bestritten, und zwar für eine Dauer, die es dem Verantwortlichen ermöglicht, die Richtigkeit der personenbezogenen Daten zu überprüfen.</li>
+            <li>Die Verarbeitung ist unrechtmäßig, die betroffene Person lehnt die Löschung der personenbezogenen Daten ab und verlangt stattdessen die Einschränkung der Nutzung der personenbezogenen Daten.</li>
+            <li>Der Verantwortliche benötigt die personenbezogenen Daten für die Zwecke der Verarbeitung nicht länger, die betroffene Person benötigt sie jedoch zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</li>
+            <li>Die betroffene Person hat Widerspruch gegen die Verarbeitung gem. Art. 21 Abs. 1 DSGVO eingelegt und es steht noch nicht fest, ob die berechtigten Gründe des Verantwortlichen gegenüber denen der betroffenen Person überwiegen.</li>
+          </ul>
+          <p>Sofern eine der oben genannten Voraussetzungen gegeben ist und eine betroffene Person die Einschränkung von personenbezogenen Daten, die bei uns gespeichert sind, verlangen möchte, kann sie sich hierzu jederzeit an uns wenden. Die Einschränkung der Verarbeitung wird dann veranlasst.</p>
+
+          <p><strong>f) Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</strong><br />
+          Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, die sie betreffenden personenbezogenen Daten, welche durch die betroffene Person einem Verantwortlichen bereitgestellt wurden, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten.</p>
+          <p>Sie hat außerdem das Recht, diese Daten einem anderen Verantwortlichen ohne Behinderung durch den Verantwortlichen, dem die personenbezogenen Daten bereitgestellt wurden, zu übermitteln, sofern die Verarbeitung auf der Einwilligung gemäß Art. 6 Abs. 1 Buchstabe a DSGVO oder Art. 9 Abs. 2 Buchstabe a DSGVO oder auf einem Vertrag gemäß Art. 6 Abs. 1 Buchstabe b DSGVO beruht und die Verarbeitung mithilfe automatisierter Verfahren erfolgt, sofern die Verarbeitung nicht für die Wahrnehmung einer Aufgabe erforderlich ist, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, welche dem Verantwortlichen übertragen wurde.</p>
+          <p>Ferner hat die betroffene Person bei der Ausübung ihres Rechts auf Datenübertragbarkeit gemäß Art. 20 Abs. 1 DSGVO das Recht, zu erwirken, dass die personenbezogenen Daten direkt von einem Verantwortlichen an einen anderen Verantwortlichen übermittelt werden, soweit dies technisch machbar ist und sofern hiervon nicht die Rechte und Freiheiten anderer Personen beeinträchtigt werden.</p>
+          <p>Zur Geltendmachung des Rechts auf Datenübertragbarkeit kann sich die betroffene Person jederzeit an uns wenden.</p>
+
+          <p><strong>g) Recht auf Widerspruch (Art. 21 DSGVO)</strong><br />
+          Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung sie betreffender personenbezogener Daten, die aufgrund von Art. 6 Abs. 1 Buchstaben e oder f DS-GVO erfolgt, Widerspruch einzulegen. Dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling.</p>
+          <p>Wir verarbeiten die personenbezogenen Daten im Falle des Widerspruchs nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die den Interessen, Rechten und Freiheiten der betroffenen Person überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</p>
+          <p>Verarbeiten wir personenbezogene Daten, um Direktwerbung zu betreiben, so hat die betroffene Person das Recht, jederzeit Widerspruch gegen die Verarbeitung der personenbezogenen Daten zum Zwecke derartiger Werbung einzulegen. Dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht. Widerspricht die betroffene Person uns gegenüber der Verarbeitung für Zwecke der Direktwerbung, so werden wir die personenbezogenen Daten nicht mehr für diese Zwecke verarbeiten.</p>
+          <p>Zudem hat die betroffene Person das Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben, gegen die sie betreffende Verarbeitung personenbezogener Daten, die bei uns zu wissenschaftlichen oder historischen Forschungszwecken oder zu statistischen Zwecken gemäß Art. 89 Abs. 1 DS-GVO erfolgen, Widerspruch einzulegen, es sei denn, eine solche Verarbeitung ist zur Erfüllung einer im öffentlichen Interesse liegenden Aufgabe erforderlich.</p>
+          <p>Zur Ausübung des Rechts auf Widerspruch kann sich die betroffene Person direkt an uns wenden. Der betroffenen Person steht es ferner frei, im Zusammenhang mit der Nutzung von Diensten der Informationsgesellschaft, ungeachtet der Richtlinie 2002/58/EG, ihr Widerspruchsrecht mittels automatisierter Verfahren auszuüben, bei denen technische Spezifikationen verwendet werden.</p>
+
+          <p><strong>h) Automatisierte Entscheidungen im Einzelfall einschließlich Profiling (Art. 22 DSGVO)</strong><br />
+          Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung - einschließlich Profiling - beruhenden Entscheidung unterworfen zu werden, die ihr gegenüber eine rechtliche Wirkung entfaltet oder sie in ähnlicher Weise erheblich beeinträchtigt, sofern die Entscheidung (1) nicht für den Abschluss oder die Erfüllung eines Vertrags zwischen der betroffenen Person und dem Verantwortlichen erforderlich ist, oder (2) aufgrund von Rechtsvorschriften der Union oder der Mitgliedstaaten, denen der Verantwortliche unterliegt, zulässig ist und diese Rechtsvorschriften angemessene Maßnahmen zur Wahrung der Rechte und Freiheiten sowie der berechtigten Interessen der betroffenen Person enthalten oder (3) mit ausdrücklicher Einwilligung der betroffenen Person erfolgt.</p>
+          <p>Ist die Entscheidung (1) für den Abschluss oder die Erfüllung eines Vertrags zwischen der betroffenen Person und dem Verantwortlichen erforderlich oder (2) erfolgt sie mit ausdrücklicher Einwilligung der betroffenen Person, treffen wir angemessene Maßnahmen, um die Rechte und Freiheiten sowie die berechtigten Interessen der betroffenen Person zu wahren. Wozu mindestens das Recht auf Erwirkung des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des eigenen Standpunkts und auf Anfechtung der Entscheidung gehört.</p>
+          <p>Möchte die betroffene Person Rechte mit Bezug auf automatisierte Entscheidungen geltend machen, kann sie sich hierzu jederzeit an uns wenden.</p>
+
+          <p><strong>i) Recht den Datenschutzbeauftragten zu konsultieren (Art. 38 Abs. 4 DSGVO)</strong><br />
+          Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht den Datenschutzbeauftragten zu allen mit der Verarbeitung ihrer personenbezogenen Daten und mit der Wahrnehmung ihrer Rechte zu Rate ziehen.</p>
+
+          <p><strong>j) Recht auf Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)</strong><br />
+          Unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs steht Ihnen das Recht auf Beschwerde bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes, zu, wenn Sie der Ansicht sind, dass die Verarbeitung der Sie betreffenden personenbezogenen Daten gegen die DSGVO verstößt.</p>
+          <p>Die Aufsichtsbehörde, bei der die Beschwerde eingereicht wurde, unterrichtet den Beschwerdeführer über den Stand und die Ergebnisse der Beschwerde einschließlich der Möglichkeit eines gerichtlichen Rechtsbehelfs nach Art. 78 DSGVO.</p>
+          <p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" target="_blank" rel="noopener noreferrer">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
+
+          {/* 6. Cookies */}
+          <h2 className="font-heading text-2xl text-slate-900 mt-10">6. Cookies und Serverlog-Dateien</h2>
+          <p>Wir nutzen für den Betrieb unserer Webseite Cookies, um die technische Funktionsfähigkeit unserer Webseite zu gewährleisten.</p>
+          <p>Bei einem Cookie handelt es sich um kleine Textdateien, die bei Aufruf unserer Webseite durch Ihren Browser auf Ihrem Endgerät gespeichert werden. Wenn Sie unsere Website später erneut aufrufen, können wir diese Cookies wieder auslesen. Cookies werden unterschiedliche lange gespeichert. Sie haben jederzeit die Möglichkeit in Ihrem Browser einzustellen, welche Cookies er annehmen soll, was aber zur Folge haben kann, dass unsere Webseite nicht mehr richtig funktioniert. Ferner können Sie Cookies selbständig jederzeit löschen. Wenn Sie das nicht machen, können wir beim Speichern angeben, wie lange eine Cookie auf Ihrem Rechner gespeichert werden soll. Hier ist zu unterscheiden, zwischen sog. Sitzungs-Cookies und dauerhaften Cookies. Sitzungs-Cookies werden von Ihrem Browser gelöscht, wenn Sie unsere Webseite verlassen oder Sie den Browser beenden. Dauerhafte Cookies werden für die Dauer gespeichert, welche wir bei der Speicherung angeben.</p>
+          <p>Wir nutzen Cookies zu folgenden Zwecken:</p>
+          <ul>
+            <li>Technisch erforderliche Cookies, die für die Nutzung der Funktionen unserer Webseite zwingend erforderlich sind (z.B. Erkennung, ob Sie sich angemeldet haben). Ohne diese Cookies könnten bestimmte Funktionen nicht bereitgestellt werden.</li>
+            <li>Funktionale Cookies, die eingesetzt werden, um bestimmte Funktionen, welche Sie nutzen wollen technisch durchführen zu können.</li>
+          </ul>
+          <p>Die meisten Browser, die unsere Nutzer verwenden, erlauben es, einzustellen, welche Cookies gespeichert werden sollen und ermöglichen es, (bestimmte) Cookies wieder zu löschen. Wenn Sie das Speichern von Cookies auf bestimmte Webseiten einschränken oder keine Cookies von dritten Webseiten zulassen, kann es unter Umständen dazu führen, dass unsere Webseite nicht mehr in vollem Umfang genutzt werden kann. Hier finden Sie Informationen, wie Sie für einige üblichen Browser die Cookie-Einstellungen anpassen können:</p>
+          <ul>
+            <li><a href="https://support.google.com/chrome/answer/95647?hl=de" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+            <li><a href="https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" rel="noopener noreferrer">Internet Explorer</a></li>
+            <li><a href="https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen" target="_blank" rel="noopener noreferrer">Firefox</a></li>
+            <li><a href="https://support.apple.com/kb/PH21411?locale=de_DE" target="_blank" rel="noopener noreferrer">Safari</a></li>
+          </ul>
+
+          {/* 7. Löschung */}
+          <h2 className="font-heading text-2xl text-slate-900 mt-10">7. Routinemäßige Löschung und Sperrung von personenbezogenen Daten</h2>
+          <p>Der für die Verarbeitung Verantwortliche verarbeitet und speichert personenbezogene Daten der betroffenen Person nur für den Zeitraum, der zur Erreichung des Speicherungszwecks erforderlich ist oder sofern dies durch den Europäischen Richtlinien- und Verordnungsgeber oder einen anderen Gesetzgeber in Gesetzen oder Vorschriften, welchen der für die Verarbeitung Verantwortliche unterliegt, vorgesehen wurde.</p>
+          <p>Entfällt der Speicherungszweck oder läuft eine vom Europäischen Richtlinien- und Verordnungsgeber oder einem anderen zuständigen Gesetzgeber vorgeschriebene Speicherfrist ab, werden die personenbezogenen Daten routinemäßig und entsprechend den gesetzlichen Vorschriften gesperrt oder gelöscht.</p>
+
+          {/* 8. Kontaktanfragen */}
+          <h2 className="font-heading text-2xl text-slate-900 mt-10">8. Kontaktanfragen / Kontaktmöglichkeit</h2>
+          <p>Sofern Sie per Kontaktformular oder E-Mail mit uns in Kontakt treten, werden die dabei von Ihnen angegebenen Daten zur Bearbeitung Ihrer Anfrage genutzt. Die Angabe der Daten ist zur Bearbeitung und Beantwortung Ihre Anfrage erforderlich - ohne deren Bereitstellung können wir Ihre Anfrage nicht oder allenfalls eingeschränkt beantworten.</p>
+          <p>Rechtsgrundlage für diese Verarbeitung ist Art. 6 Abs. 1 lit. b) DSGVO.</p>
+          <p>Ihre Daten werden gelöscht, sofern Ihre Anfrage abschließend beantwortet worden ist und der Löschung keine gesetzlichen Aufbewahrungspflichten entgegenstehen, wie bspw. bei einer sich etwaig anschließenden Vertragsabwicklung.</p>
+
+          {/* 9. Kontaktformular */}
+          <h2 className="font-heading text-2xl text-slate-900 mt-10">9. Kontaktformular</h2>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">a) Beschreibung und Umfang der Datenverarbeitung</h3>
+          <p>Auf unserer Internetseite ist ein Kontaktformular vorhanden, welches für die elektronische Kontaktaufnahme genutzt werden kann. Nimmt ein Nutzer diese Möglichkeit wahr, so werden die in der Eingabemaske eingegeben Daten an uns übermittelt und gespeichert.</p>
+          <p>Im Zeitpunkt der Absendung der Nachricht werden folgende Daten gespeichert:</p>
+          <ul>
+            <li>Name</li>
+            <li>Emailadresse</li>
+            <li>Telefonnummer</li>
+            <li>Die Nachricht</li>
+            <li>IP-Adresse des aufrufenden Rechners</li>
+            <li>Datum und Uhrzeit der Kontaktaufnahme</li>
+          </ul>
+          <p>Für die Verarbeitung der Daten wird im Rahmen des Absendevorgangs Ihre Einwilligung eingeholt und auf diese Datenschutzerklärung verwiesen.</p>
+          <p>Alternativ ist eine Kontaktaufnahme über die bereitgestellte Emailadresse möglich. In diesem Fall werden die mit der Email übermittelten personenbezogenen Daten des Nutzers gespeichert. Dabei werden diese Daten über den oder die Server unseres Providers an uns weitergeleitet.</p>
+          <p>Die Verarbeitung der personenbezogenen Daten aus der Eingabemaske dient uns allein zur Bearbeitung der Kontaktaufnahme. Im Falle einer Kontaktaufnahme per Email liegt hieran auch das erforderliche berechtigte Interesse an der Verarbeitung der Daten.</p>
+          <p>Die sonstigen während des Absendevorgangs verarbeiteten personenbezogenen Daten dienen dazu, einen Missbrauch des Kontaktformulars zu verhindern und die Sicherheit unserer informationstechnischen Systeme sicherzustellen.</p>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">b) Rechtsgrundlage für die Datenverarbeitung</h3>
+          <p>Rechtsgrundlage für die Verarbeitung der Daten ist eine Vertragsanbahnung, die auf Anfrage der betroffenen Person erfolgt, Art. 6 Abs. 1 S. 1 lit. b Alt. 2 DSGVO.</p>
+          <p>Rechtsgrundlage für die Verarbeitung der Daten, die im Zuge einer Übersendung einer Email übermittelt werden, ist Art. 6 Abs. 1 S. 1 lit. f DSGVO.</p>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">c) Dauer der Speicherung</h3>
+          <p>Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Für die personenbezogenen Daten aus der Eingabemaske des Kontaktformulars und diejenigen, die per Email übersandt wurden, ist dies dann der Fall, wenn die jeweilige Konversation mit dem Nutzer beendet ist. Beendet ist die Konversation dann, wenn sich aus den Umständen entnehmen lässt, dass der betroffene Sachverhalt abschließend geklärt ist.</p>
+          <p>Die während des Absendevorgangs zusätzlich erhobenen personenbezogenen Daten werden spätestens nach einer Frist von sieben Tagen gelöscht.</p>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">d) Widerspruchs- und Beseitigungsmöglichkeit</h3>
+          <p>Der Nutzer hat jederzeit die Möglichkeit, seine Einwilligung zur Verarbeitung der personenbezogenen Daten zu widerrufen. Nimmt der Nutzer per Email Kontakt mit uns auf, so kann er der Speicherung seiner personenbezogenen Daten jederzeit widersprechen. In einem solchen Fall kann die Konversation nicht fortgeführt werden.</p>
+          <p>Bitte senden sie uns hierzu eine formlose Email an <a href="mailto:g.junker@junker-sicherheit.de">g.junker@junker-sicherheit.de</a></p>
+          <p>Alle personenbezogenen Daten, die im Zuge der Kontaktaufnahme gespeichert wurden, werden in diesem Fall gelöscht.</p>
+
+          {/* 10. Externes Hosting */}
+          <h2 className="font-heading text-2xl text-slate-900 mt-10">10. Externes Hosting</h2>
+          <p>Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um:</p>
+          <ul>
+            <li>IP-Adressen</li>
+            <li>Kontaktanfragen</li>
+            <li>Meta- und Kommunikationsdaten</li>
+            <li>Vertragsdaten</li>
+            <li>Kontaktdaten</li>
+            <li>Namen</li>
+            <li>Webseitenzugriffe und sonstige Daten, die über eine Website generiert werden, handeln.</li>
+          </ul>
+          <p>Der Einsatz des Hosters erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO).</p>
+          <p>Unser Hoster wird Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.</p>
+          <h3 className="font-heading text-xl text-slate-900 mt-6">Abschluss eines Vertrages über Auftragsverarbeitung</h3>
+          <p>Um die datenschutzkonforme Verarbeitung zu gewährleisten, haben wir einen Vertrag über Auftragsverarbeitung mit unserem Hoster geschlossen.</p>
+
+          {/* 11. SSL */}
+          <h2 className="font-heading text-2xl text-slate-900 mt-10">11. SSL- bzw. TLS-Verschlüsselung</h2>
+          <p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von "http://" auf "https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+          <p>Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p>
+
+          {/* 12. Analyse-Tools */}
+          <h2 className="font-heading text-2xl text-slate-900 mt-10">12. Analyse-Tools und Tools von Drittanbietern</h2>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">a) Open StreetMap</h3>
+          <p>Wir haben auf unserer Website Kartenausschnitte des Online-Kartentools „OpenStreetMap" eingebunden. Dabei handelt es sich um ein sogenanntes Open-Source-Mapping, welches wir über eine API (Schnittstelle) abrufen können. Angeboten wird diese Funktion von OpenStreetMap Foundation, St John's Innovation Centre, Cowley Road, Cambridge, CB4 0WS, United Kingdom. Durch die Verwendung dieser Kartenfunktion wird Ihre IP-Adresse an OpenStreetMap weitergeleitet. In dieser Datenschutzerklärung erfahren Sie warum wir Funktionen des Tools OpenStreetMap verwenden, wo welche Daten gespeichert werden und wie Sie diese Datenspeicherung verhindern können.</p>
+          <p><strong>Was ist OpenStreetMap?</strong><br />
+          Das Projekt OpenStreetMap wurde 2004 ins Leben gerufen. Ziel des Projekts ist und war es, eine freie Weltkarte zu erschaffen. User sammeln weltweit Daten etwa über Gebäude, Wälder, Flüsse und Straßen. So entstand über die Jahre eine umfangreiche, von Usern selbst erstellte digitale Weltkarte. Selbstverständlich ist die Karte, nicht vollständig, aber in den meisten Regionen mit sehr vielen Daten ausgestattet.</p>
+          <p><strong>Warum verwenden wir OpenStreetMap auf unserer Website?</strong><br />
+          Unsere Website soll Ihnen in erster Linie hilfreich sein. Und das ist sie aus unserer Sicht immer dann, wenn man Information schnell und einfach findet. Da geht es natürlich einerseits um unsere Dienstleistungen und Produkte, andererseits sollen Ihnen auch weitere hilfreiche Informationen zur Verfügung stehen. Deshalb nutzen wir auch den Kartendienst OpenStreetMap. Denn so können wir Ihnen beispielsweise genau zeigen, wie Sie unsere Firma finden. Die Karte zeigt Ihnen den besten Weg zu uns und Ihre Anfahrt wird zum Kinderspiel.</p>
+          <p><strong>Welche Daten werden von OpenStreetMap gespeichert?</strong><br />
+          Wenn Sie eine unserer Webseiten besuchen, die OpenStreetMap anbietet, werden Nutzerdaten an den Dienst übermittelt und dort gespeichert. OpenStreetMap sammelt etwa Informationen über Ihre Interaktionen mit der digitalen Karte, Ihre IP-Adresse, Daten zu Ihrem Browser, Gerätetyp, Betriebssystem und an welchem Tag und zu welcher Uhrzeit Sie den Dienst in Anspruch genommen haben. Dafür wird auch Tracking-Software zur Aufzeichnung von Userinteraktionen verwendet. Das Unternehmen gibt hier in der eigenen Datenschutzerklärung das Analysetool „Piwik" an.</p>
+          <p>Die erhobenen Daten sind in Folge den entsprechenden Arbeitsgruppen der OpenStreetMap Foundation zugänglich. Laut dem Unternehmen werden persönliche Daten nicht an andere Personen oder Firmen weitergegeben, außer dies ist rechtlich notwendig. Der Drittanbieter Piwik speichert zwar Ihre IP-Adresse, allerdings in gekürzter Form.</p>
+          <p>Folgendes Cookie kann in Ihrem Browser gesetzt werden, wenn Sie mit OpenStreetMap auf unserer Website interagieren:</p>
+          <ul>
+            <li>Name: _osm_location<br />Wert: 9.63312%7C52.41500%7C17%7CM<br />Verwendungszweck: Das Cookie wird benötigt, um die Inhalte von OpenStreetMap zu entsperren.<br />Ablaufdatum: nach 10 Jahren</li>
+          </ul>
+          <p>Wenn Sie sich das Vollbild der Karte ansehen wollen, werden Sie auf die OpenStreetMap-Website verlinkt. Dort können unter anderem folgende Cookies in Ihrem Browser gespeichert werden:</p>
+          <ul>
+            <li>Name: _osm_totp_token<br />Wert: 148253311206064-2<br />Verwendungszweck: Dieses Cookie wird benutzt, um die Bedienung des Kartenausschnitts zu gewährleisten.<br />Ablaufdatum: nach einer Stunde</li>
+            <li>Name: _osm_session<br />Wert: 1d9bfa122e0259d5f6db4cb8ef653a1c<br />Verwendungszweck: Mit Hilfe des Cookies können Sitzungsinformationen (also Userverhalten) gespeichert werden.<br />Ablaufdatum: nach Sitzungsende</li>
+            <li>Name: _pk_id.1.cf09<br />Wert: 4a5.1593684142.2.1593688396.1593688396311206064-9<br />Verwendungszweck: Dieses Cookie wird von Piwik gesetzt, um Userdaten wie etwa das Klickverhalten zu speichern bzw. zu messen.<br />Ablaufdatum: nach einem Jahr</li>
+          </ul>
+          <p><strong>Wie lange und wo werden die Daten gespeichert?</strong><br />
+          Die API-Server, die Datenbanken und die Server von Hilfsdiensten befinden sich derzeit im Vereinten Königreich (Großbritannien und Nordirland) und in den Niederlanden. Ihre IP-Adresse und Userinformationen, die in gekürzter Form durch das Webanalysetool Piwik gespeichert werden, werden nach 180 Tagen wieder gelöscht.</p>
+          <p><strong>Wie kann ich meine Daten löschen bzw. die Datenspeicherung verhindern?</strong><br />
+          Sie haben jederzeit das Recht auf Ihre personenbezogenen Daten zuzugreifen und Einspruch gegen die Nutzung und Verarbeitung zu erheben. Cookies, die von OpenStreetMap möglicherweise gesetzt werden, können Sie in Ihrem Browser jederzeit verwalten, löschen oder deaktivieren. Dadurch wird allerdings der Dienst nicht mehr im vollen Ausmaß funktionieren. Bei jedem Browser funktioniert die Verwaltung, Löschung oder Deaktivierung von Cookies etwas anders. Im Folgenden finden Sie Links zu den Anleitungen der bekanntesten Browser:</p>
+          <ul>
+            <li>Chrome: Cookies in Chrome löschen, aktivieren und verwalten</li>
+            <li>Safari: Verwalten von Cookies und Websitedaten mit Safari</li>
+            <li>Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben</li>
+            <li>Internet Explorer: Löschen und Verwalten von Cookies</li>
+            <li>Microsoft Edge: Löschen und Verwalten von Cookies</li>
+          </ul>
+          <p>Wenn Sie mehr über die Datenverarbeitung durch OpenStreetMap erfahren wollen, empfehlen wir Ihnen die Datenschutzerklärung des Unternehmens unter <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener noreferrer">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a>.</p>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">b) IONOS Tracking MYWEBSITE</h3>
+          <p>In unserem Internetauftritt setzen wir MyWebsite ein. Hierbei handelt es sich um einen Dienst der 1&amp;1 IONOS SE, Elgendorfer Str. 57, 56410 Montabaur, nachfolgend nur „MyWebsite" genannt.</p>
+          <p>Durch MyWebsite werden Tracking-Cookies über Ihren Internet-Browser Cookies auf Ihrem Endgerät gespeichert, die auf der Technologie Snowplow Analytics von der Snowplow Analytics Limited, 32-38, Scrutton Street, London, Großbritannien, basieren. Mit Hilfe dieser Cookies kann z. B. ausgewertet werden, wie häufig Sie unseren Internetauftritt besuchen oder welche (Unter-) Seiten unseres Internetauftritts aufgerufen werden. Die 1&amp;1 IONOS SE gibt hierzu an, dass dabei keinerlei personenbezogene Daten erfasst würden.</p>
+          <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Verbesserung und Optimierung unseres Internetauftritts.</p>
+          <p>Falls Sie mit dieser Verarbeitung nicht einverstanden sind, haben Sie die Möglichkeit, die Speicherung der Cookies durch eine Einstellung in Ihrem Internet-Browsers zu verhindern. Nähere Informationen hierzu finden Sie vorstehend unter „Cookies".</p>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">c) IONOS WebAnalytics</h3>
+          <p>In unserem Internetauftritt setzen wir WebAnalytics ein. Hierbei handelt es sich um einen Analyse-Dienst der 1&amp;1 IONOS SE, Elgendorfer Str. 57, 56410 Montabaur, Deutschland, nachfolgend nur „WebAnalytics" genannt, mit dem wir die Benutzung unseres Internetauftritts analysieren können.</p>
+          <p>Zur Analyse werden anhand eines Pixels oder über die Logfiles in unserem Auftrag Daten über Typ und Version Ihres Internetbrowsers, Ihr Betriebssystem, der Typ Ihres Endgerätes, die Website, von der aus Sie auf unseren Internetauftritt gewechselt haben (Referrer URL), die Website(s) unseres Internetauftritts, die Sie besuchen, oder die Dateien, die Sie anfordern, Datum und Uhrzeit des jeweiligen Zugriffs sowie die anonymisierte IP-Adresse des Internetanschlusses, von dem aus die Nutzung unseres Internetauftritts erfolgt, erhoben.</p>
+          <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Analyse, Optimierung, Verbesserung sowie in dem wirtschaftlichen Betrieb unseres Internetauftritts.</p>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">d) HERE Maps</h3>
+          <p>In unserem Internetauftritt setzen wir zur Visualisierung einer Anfahrtsbeschreibung den Dienst HERE Maps ein. Dabei handelt es sich um einen Dienst der HERE Global B.V, Kennedyplein 222-226, 5611 ZT Eindhoven, Niederlande, nachfolgend nur „HERE" genannt.</p>
+          <p>Um Standorte darstellen zu können, ist Verbindung zum HERE-Server nebst der Abfrage Ihrer IP-Adresse durch HERE erforderlich. HERE nutzt Ihre IP-Adresse dabei zunächst ausschließlich dazu, um Ihren Internet-Browser bzw. Ihnen entsprechende Informationen zur Verfügung zu stellen. Ihre IP-Adresse ist damit für die Darstellung des Dienstes erforderlich. HERE kann jedoch aufgrund dieser Verbindung erkennen, dass die Anfrage von unserem Internetauftritt stammt und an welche IP-Adresse die Darstellungen gesendet werden.</p>
+          <p>Darüber hinaus wird durch HERE ein Cookie über Ihren Internet-Browser auf Ihrem Endgerät gespeichert. Dieses Cookie dient der Anzeige der Seite und den damit verbundenen Funktionen, in die HERE eingebunden ist, sowie der Verarbeitung von Nutzereinstellungen und -daten.</p>
+          <p>Sofern Sie mit dieser Verarbeitung nicht einverstanden sind, haben Sie die Möglichkeit, die Installation der Cookies durch die entsprechenden Einstellungen in Ihrem Internet-Browser zu verhindern. Einzelheiten hierzu finden Sie vorstehend unter dem Punkt „Cookies".</p>
+          <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Optimierung der Funktionalität unseres Internetauftritts.</p>
+          <p>Sofern Sie eingewilligt haben, insbesondere durch eine entsprechende Einstellung in Ihrem Internet-Browser, kann HERE auch Ihren ungefähren Standort über Ihre IP-Adresse verarbeiten. Rechtsgrundlage ist dabei Art. 6 Abs. 1 lit. a) DSGVO. Die Einwilligung kann jederzeit für die Zukunft durch die entsprechende Einstellung Ihres Internet-Browsers widerrufen werden.</p>
+          <p>HERE bietet unter <a href="https://legal.here.com/de-de/privacy/policy" target="_blank" rel="noopener noreferrer">https://legal.here.com/de-de/privacy/policy</a> weitergehende Informationen zu der Datenverarbeitung an.</p>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">e) Mapbox API</h3>
+          <p>Für Anfahrtsbeschreibungen setzen wir Mapbox API, einen Dienst der Mapbox Inc., 740 15th Street NW, 5th Floor, Washington, District of Columbia 20005, USA, nachfolgend nur „Mapbox" genannt, ein.</p>
+          <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Optimierung der Funktionalität unseres Internetauftritts.</p>
+          <p>Bei Aufruf einer unserer Internetseiten, in die der Dienst Mapbox eingebunden ist, wird durch Mapbox ein Cookie über Ihren Internet-Browser auf Ihrem Endgerät gespeichert. Hierdurch werden Informationen über Ihre Nutzung unseres Internetauftritts, einschließlich Ihrer IP-Adresse, an einen Server von Mapbox in den USA übertragen und dort gespeichert. Diese Daten werden zum Zwecke der Anzeige der Seite bzw. zur Gewährleistung der Funktionalität des Dienstes Mapbox verarbeitet. Diese Informationen wird Mapbox womöglich an Dritte weitergeben, sofern dies gesetzlich vorgeschrieben ist oder die Informationen durch Dritte im Auftrag von Mapbox verarbeitet werden.</p>
+          <p>Die „Terms of Service", die durch Mapbox unter <a href="https://www.mapbox.com/tos/#maps" target="_blank" rel="noopener noreferrer">https://www.mapbox.com/tos/#maps</a> bereitgestellt werden, enthalten weitergehenden Informationen über die Nutzung von Mapbox und über die von Mapbox erlangten Daten.</p>
+          <p>Sofern Sie mit dieser Verarbeitung nicht einverstanden sind, haben Sie die Möglichkeit, die Installation der Cookies durch die entsprechenden Einstellungen in Ihrem Internet-Browser zu verhindern. Einzelheiten hierzu finden Sie vorstehend unter dem Punkt „Cookies". Die Nutzung des Dienstes Mapbox über unseren Internetauftritt ist dann allerdings nicht mehr möglich.</p>
+          <p>Zudem bietet Mapbox unter <a href="https://www.mapbox.com/privacy/" target="_blank" rel="noopener noreferrer">https://www.mapbox.com/privacy/</a> weitere Informationen zur Erhebung und Nutzung der Daten sowie zu Ihren Rechten und Möglichkeiten zum Schutz Ihrer Privatsphäre an.</p>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">f) mywebsite-editor.com - 1&amp;1 IONOS SE</h3>
+          <p>Zur Funktionalität unseres Internetauftritts setzen wir den Dienst mywebsite-editor.com ein. Hierbei handelt es sich um einen Dienst der 1&amp;1 IONOS SE, Elgendorfer Str. 57, 56410 Montabaur, Deutschland, nachfolgend nur „mywebsite-editor" genannt.</p>
+          <p>Aufgrund des Einbindens von mywebsite-editor lädt Ihr Internet-Browser zur Darstellung der Inhalte unseres Internetauftritts einen zwingend benötigten Java-Script-Code von dem mywebsite-editor Server. Hierdurch erlangt mywebsite-editor Kenntnis davon, dass unser Internetauftritt über Ihre IP-Adresse aufgerufen worden ist. Gleichzeitig wird ein sog. Session-Cookie über Ihren Internet-Browser auf Ihrem Endgerät gespeichert.</p>
+          <p>Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs.1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Präsentation einer einheitlichen und ansprechenden Darstellung unseres Internetauftritts.</p>
+          <p>Um die Ausführung des Java-Script-Codes von mywebsite-editor und dadurch die Erfassung sowie die Verarbeitung Ihrer Daten zu verhindern, können Sie einen sog. Java-Script-Blocker installieren, wie bspw. noscript.net oder ghostery.com. Zudem können Sie die Ausführung des Java-Script-Codes in den Einstellungen Ihres Internet-Browsers deaktivieren.</p>
+          <p>Falls Sie mit der Verarbeitung der Cookies nicht einverstanden sind, haben Sie die Möglichkeit, auch die Speicherung der Cookies durch eine Einstellung in Ihrem Internet-Browsers zu verhindern. Nähere Informationen hierzu finden Sie vorstehend unter „Cookies".</p>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">g) Google Fonts</h3>
+          <p>Abschließend lässt sich sagen, dass bei uns die Google Fonts zum Einsatz kommen, da wir unseren Online-Auftritt über alle Plattformen so einheitlich wie möglich erscheinen lassen möchten.</p>
+          <p><strong>Welche unserer Daten werden von Google gespeichert und für wie lange?</strong><br />
+          Beim Besuch unserer Website werden die Google Fonts über einen Server von Google nachgeladen. Durch diesen Aufruf werden Daten an die Google-Server transferiert. Dadurch erkennt Google durch Ihre IP-Adresse, dass Sie unsere Website besucht haben. Zu diesem Zweck wurde das Google Fonts API (Application Programming Interface) entwickelt, um die Verwendung, die Erfassung und die Speicherung von Daten der Endanwender auf das zu reduzieren, was für eine Bereitstellung von Schriften notwendig ist. Dieses API erfüllt auch eine Funktion als Datenübermittler.</p>
+          <p>Google behauptet, dass CSS- und Schrift-Anfragen nur bei Google und damit sicher gespeichert werden. Um zu sehen wie gut die einzelnen Schriften bei den Anwendern ankommen, wertet Google die Nutzungszahlen aus. Diese Auswertungen publiziert Google dann auf internen Analyseseiten, wie z.B. Google Analytics. Daten, welche der eigene Web-Crawler sammelt, verwendet Google auch um festzustellen, welche Webseiten denn Google-Schriften einsetzen. Diese Informationen werden dann in der BigQuery-Datenbank von den Google Fonts veröffentlicht. So wird dieser Service genutzt um große Datenmengen zu untersuchen und dann bewegen zu können.</p>
+          <p>Zu beachten ist jedoch, dass durch jede Anfrage zu den Google Fonts auch weitere Informationen wie die IP-Adresse, Art und Version des Browsers, die Spracheinstellung und die Bildschirmauflösung automatische mit an die Google-Server übertragen werden. Da Google hier nicht eindeutig kommuniziert, lässt sich nicht feststellen, ob diese Daten nur übertragen oder auch gespeichert werden, und wenn ja, für wie lange.</p>
+          <p>Mögliche Anfragen für CSS-Assets werden von Google einen Tag lang auf Servern gespeichert, die maßgeblich außerhalb der Europäischen Union stehen. Dadurch wird es uns ermöglicht diese Schriften unter Zuhilfenahme eines Google Stylesheets zu nutzen. Dies ist eine Formatvorlage, die es ermöglicht das Design und/oder die Schriftart einer Website einfach und relativ schnell zu ändern.</p>
+          <p>Google gibt an, die Font-Dateien ein Jahr lang zu speichern, denn Googles Ziel ist es, die Ladezeiten beim Aufruf von Webseiten zu verbessern. Je mehr Webseiten auf diese Art von Schriften verweisen, desto eher werden diese zwischengespeichert und können beim nächsten Aufruf schneller geladen werden. So ist es auch möglich, dass Google diese Schriftarten neuen Gegebenheiten anpasst, um z.B. das Design zu verbessern, die Abdeckung von Sprache zu erhöhen oder um die Dateigröße zu verringern.</p>
+          <p><strong>Wie lassen sich meine Daten löschen bzw. schon eine Speicherung verhindern?</strong><br />
+          Daten, die an Google bei einem Seitenaufruf automatischen transferiert werden, lassen sich nicht ohne Weiteres löschen. Man kann jedoch den Google-Support unter <a href="https://support.google.com/?hl=de&tid=311853284" target="_blank" rel="noopener noreferrer">https://support.google.com/?hl=de&amp;tid=311853284</a> kontaktieren und so eine geringere Speicherdauer als ein Jahr erwirken. Gänzlich verhindern lässt sich das nur, indem man unsere Seite(n) nicht aufruft.</p>
+          <p>Google erlaubt uns einen uneingeschränkten Zugriff auf alle Fonts, damit wir ein möglichst optimales Ergebnis für unsere Website erwirken können. Wer mehr Informationen zu den Google-Fonts und weitere Fragen hat, findet Antworten unter <a href="https://developers.google.com/fonts/faq?tid=311853284" target="_blank" rel="noopener noreferrer">https://developers.google.com/fonts/faq?tid=311853284</a>.</p>
+          <p>Dort werden zum einen Cookies verwendet, aber auch Antworten in englischer Sprache gegeben. Google geht dort zwar ansatzweise auf die Speicherung von Daten ein, aber das Unternehmen ist nicht bekannt dafür, wirklich genaue Informationen über gespeicherte Daten zu geben.</p>
+          <p><strong>Was ist die Rechtsgrundlage dafür?</strong><br />
+          Sofern Sie eingewilligt haben, dass Google-Fonts eingesetzt werden dürfen, kommt Art. 6 Abs. 1 lit a der Datenschutz-Grundverordnung (DSGVO) zum Einsatz, sprich es wird eine Einwilligung zur Verarbeitung personenbezogener Daten erteilt.</p>
+          <p>Zusätzlich besteht von unserer Seite ein berechtigtes Interesse diese Google Fonts einzusetzen. Die Rechtsgrundlage dafür regelt Art. 6 Abs. 1 lit. f (berechtigtes Interesse). Wir setzen die Google-Fonts somit nur ein, wenn eine Einwilligung erteilt wurde.</p>
+          <p>Google verarbeitet die gespeicherten Daten wohl größtenteils in den USA. Nach Meinung des Europäischen Gerichtshofs stellt dies zur Zeit kein angemessenes Schutzniveau dar und kann daher vielerlei Risiken für die Rechtmäßigkeit und die Sicherheit der Datenverarbeitung bedeuten.</p>
+          <p>Als Rechtsgrundlage für eine Verarbeitung von personenbezogenen Daten an Empfänger, die Ihren Sitz in sogenannten Drittstaaten haben (also außerhalb der EU, Lichtenstein, Norwegen, Island und insbesondere den USA), setzt Google von der EU-Kommission genehmigte Standardvertragsklauseln (Art. 46 Abs. 2 und 3 der DSGVO) ein. Durch diese Klauseln verpflichtet sich Google, das Datenschutzniveau der EU auch außerhalb der EU einzuhalten. Weitere Informationen finden Sie unter: <a href="https://germany.representation.ec.europa.eu/index_de" target="_blank" rel="noopener noreferrer">https://germany.representation.ec.europa.eu/index_de</a></p>
+          <p>Google publiziert die Informationen welche Daten erfasst und wofür diese verwendet werden, über nachstehende URL: <a href="https://policies.google.com/privacy?hl=de&tid=311853284" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy?hl=de&amp;tid=311853284</a></p>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">h) Amazon Cloudfront</h3>
+          <p>Wir nutzen das Content Delivery Network (CDN) Amazon CloudFront von Amazon Web Services EMEA SARL, 38 avenue John F. Kennedy, L-1855 Luxembourg (AWS), um die Sicherheit und die Auslieferungsgeschwindigkeit unserer Website zu erhöhen. Dies entspricht unserem berechtigten Interesse (Art. 6 Abs. 1 lit. f DSGVO). Ein CDN ist ein Netzwerk aus weltweit verteilten Servern, das in der Lage ist, optimiert Inhalte an den Websitenutzer auszuliefern. Für diesen Zweck können personenbezogene Daten in Server-Logfiles von AWS verarbeitet werden.</p>
+          <p>AWS ist Empfänger Ihrer personenbezogenen Daten und als Auftragsverarbeiter für uns tätig. Die entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO, selbst kein Content Delivery Network zu betreiben.</p>
+          <p>Sie haben das Recht der Verarbeitung zu widersprechen. Ob der Widerspruch erfolgreich ist, ist im Rahmen einer Interessenabwägung zu ermitteln.</p>
+          <p>Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Die Funktionsfähigkeit der Website ist ohne die Verarbeitung nicht gewährleistet.</p>
+          <p>Ihre personenbezogenen Daten werden von AWS so lange gespeichert, wie es für die beschriebenen Zwecke erforderlich ist.</p>
+          <p>Weitere Informationen zu Widerspruchs- und Beseitigungsmöglichkeiten gegenüber AWS finden Sie unter: <a href="https://d1.awsstatic.com/legal/privacypolicy/AWS_Privacy_Notice__German_Translation.pdf" target="_blank" rel="noopener noreferrer">https://d1.awsstatic.com/legal/privacypolicy/AWS_Privacy_Notice__German_Translation.pdf</a></p>
+          <p>AWS hat Compliance-Maßnahmen für internationale Datenübermittlungen umgesetzt. Diese gelten für alle weltweiten Aktivitäten, bei denen AWS personenbezogene Daten von natürlichen Personen in der EU verarbeitet. Diese Maßnahmen basieren auf den EU-Standardvertragsklauseln (SCCs). Weitere Informationen finden Sie unter: <a href="https://d1.awsstatic.com/legal/aws-gdpr/AWS_GDPR_DPA.pdf" target="_blank" rel="noopener noreferrer">https://d1.awsstatic.com/legal/aws-gdpr/AWS_GDPR_DPA.pdf</a></p>
+
+          <h3 className="font-heading text-xl text-slate-900 mt-6">i) DudaMobile</h3>
+          <p>Diese Website nutzt Duda Mobile Statistics um Besucherzugriffe statistisch auszuwerten. Anbieter ist die Duda Mobile, 577 College Avenue, Palo Alto, CA 94306, USA. Duda Mobile Statistics verwendet Cookies, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website erlauben.</p>
+          <p>Die durch die Cookies generierten Informationen über die Benutzung unserer Webseite werden auf Servern in Europa und den USA gespeichert. Ihre IP-Adresse wird nach der Verarbeitung und vor der Speicherung anonymisiert. Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität unserer Webseite eingeschränkt sein.</p>
+          <p>Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Duda Mobile haben. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Duda Mobile: <a href="https://www.dudamobile.com/legal/privacy" target="_blank" rel="noopener noreferrer">https://www.dudamobile.com/legal/privacy</a></p>
+
         </div>
       </FadeIn>
     </div>
