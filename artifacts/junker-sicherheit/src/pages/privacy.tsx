@@ -1,9 +1,6 @@
-import { FadeIn } from '@/components/ui/fade-in';
-
 export default function Privacy() {
   return (
     <div className="container mx-auto px-4 max-w-3xl py-24">
-      <FadeIn>
         <div className="bg-white p-8 md:p-12 lg:p-16 rounded-[2rem] shadow-sm border border-slate-200 prose prose-slate prose-lg max-w-none">
           <h1 className="font-heading font-bold text-4xl md:text-5xl mb-12 text-slate-900">Datenschutzerklärung</h1>
 
@@ -360,7 +357,6 @@ export default function Privacy() {
           <p>Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Duda Mobile haben. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Duda Mobile: <a href="https://www.dudamobile.com/legal/privacy" target="_blank" rel="noopener noreferrer">https://www.dudamobile.com/legal/privacy</a></p>
 
         </div>
-      </FadeIn>
     </div>
   );
 }

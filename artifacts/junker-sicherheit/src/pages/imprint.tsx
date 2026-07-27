@@ -1,9 +1,6 @@
-import { FadeIn } from '@/components/ui/fade-in';
-
 export default function Imprint() {
   return (
     <div className="container mx-auto px-4 max-w-3xl py-24">
-      <FadeIn>
         <div className="bg-white p-8 md:p-12 lg:p-16 rounded-[2rem] shadow-sm border border-slate-200 prose prose-slate prose-lg max-w-none">
           <h1 className="font-heading font-bold text-4xl md:text-5xl mb-12 text-slate-900">Impressum</h1>
 
@@ -81,7 +78,6 @@ export default function Imprint() {
             Sollte der Inhalt oder die Aufmachung dieser Homepage die Rechte Dritter oder gesetzliche Bestimmungen verletzen, so wird um eine entsprechende schriftliche Nachricht ohne Kostennote gebeten. Jedweder Abmahnung ohne vorherige schriftliche Benachrichtigung wird hiermit ausdrücklich widersprochen. Gleichzeitig wird garantiert, dass zu Recht beanstandete Passagen umgehend entfernt oder verändert werden, ohne dass die Einschaltung eines Rechtsbeistandes erforderlich ist. Kostennoten einer anwaltlichen Abmahnung ohne eine vorhergehende schriftliche Kontaktaufnahme, werden im Sinne der Schadenminderungspflicht als unbegründet zurückgewiesen.
           </p>
         </div>
-      </FadeIn>
     </div>
   );
 }
