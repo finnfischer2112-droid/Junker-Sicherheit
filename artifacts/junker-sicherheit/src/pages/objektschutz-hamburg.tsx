@@ -58,7 +58,7 @@ const faqItems = [
     a: 'In den meisten Fällen können wir innerhalb weniger Tage mit dem Schutz Ihres Objekts beginnen. Bei dringenden Fällen sprechen Sie uns direkt an – wir finden eine schnelle Lösung.',
   },
   {
-    q: 'Sind Ihre Mitarbeiter §34a-zertifiziert?',
+    q: 'Sind Ihre Mitarbeiter §34a ausgebildet?',
     a: 'Ja, alle unsere Sicherheitsmitarbeiter sind nach §34a GewO geprüft und werden regelmäßig weitergeschult. Qualifikation und Zuverlässigkeit sind für uns nicht verhandelbar.',
   },
   {
@@ -286,14 +286,14 @@ const refLogos = [
 export default function ObjektschutzHamburg() {
   useEffect(() => {
     // Page-specific title & meta for this landing page
-    document.title = 'Objektschutz Hamburg | §34a-zertifiziert · 24/7 · Junker-Sicherheit';
+    document.title = 'Objektschutz Hamburg | §34a ausgebildet · 24/7 · Junker-Sicherheit';
     const setMeta = (name: string, content: string, prop = false) => {
       const sel = prop ? `meta[property="${name}"]` : `meta[name="${name}"]`;
       let el = document.querySelector<HTMLMetaElement>(sel);
       if (!el) { el = document.createElement('meta'); prop ? el.setAttribute('property', name) : el.setAttribute('name', name); document.head.appendChild(el); }
       el.setAttribute('content', content);
     };
-    const desc = 'Objektschutz Hamburg – §34a-zertifiziert, inhabergeführt, sofort einsatzbereit. Werksschutz, Revierdienste & Zugangskontrolle für Hamburger Unternehmen. Kostenlose Erstberatung anfordern!';
+    const desc = 'Objektschutz Hamburg – §34a ausgebildet, inhabergeführt, sofort einsatzbereit. Werksschutz, Revierdienste & Zugangskontrolle für Hamburger Unternehmen. Kostenlose Erstberatung anfordern!';
     setMeta('description', desc);
     setMeta('og:title', 'Objektschutz Hamburg | Junker-Sicherheit', true);
     setMeta('og:description', desc, true);
@@ -346,7 +346,7 @@ export default function ObjektschutzHamburg() {
 
             {/* Subtext */}
             <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl leading-relaxed">
-              §34a-zertifizierte Sicherheitskräfte. Sofort einsatzbereit. Für Büros, Lager,
+              §34a ausgebildete Sicherheitskräfte. Sofort einsatzbereit. Für Büros, Lager,
               Industrieanlagen und mehr – in ganz Hamburg und Umgebung.
             </p>
 
