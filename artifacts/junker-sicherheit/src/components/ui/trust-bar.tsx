@@ -13,10 +13,10 @@ export function TrustBar() {
 
           <span className="text-slate-200 shrink-0">|</span>
 
-          {/* §34a zertifiziert */}
+          {/* §34a ausgebildet */}
           <div className="flex items-center gap-1.5 shrink-0 px-3 md:px-5 text-sm text-slate-700">
             <Shield className="h-4 w-4 text-primary shrink-0" />
-            <span className="text-primary font-medium whitespace-nowrap">§34a zertifiziert</span>
+            <span className="text-primary font-medium whitespace-nowrap">§34a ausgebildet</span>
           </div>
 
           <span className="text-slate-200 shrink-0">|</span>

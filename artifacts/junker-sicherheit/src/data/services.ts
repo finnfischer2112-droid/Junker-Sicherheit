@@ -17,14 +17,14 @@ export const services = [
     extra: "Besonders wichtig ist uns dabei die sorgsame Auswahl, Schulung und Mitwirkung unserer Mitarbeiter in Ihre unternehmerischen Abläufe. Wir wollen keine Fremdkörper sein, sondern feste Mitglieder Ihres Teams.",
     image: "object.jpg",
     usps: [
-      "§34a-geprüftes Personal rund um die Uhr",
+      "§34a ausgebildetes Personal rund um die Uhr",
       "Maßgeschneiderte Revierdienstkonzepte",
       "Nahtlose Integration in Ihre Betriebsabläufe"
     ],
     localText: "Als Sicherheitsdienstleister mit Sitz in Hasloh bei Hamburg sind wir der ideale Partner für Unternehmen in Hamburg und der gesamten Metropolregion. Von Altona bis Wandsbek, von Pinneberg bis Bad Segeberg – wir kennen die Region und ihre spezifischen Anforderungen an professionellen Objektschutz.",
     faq: [
       { q: "Wie schnell können Sie bei einem Sicherheitsvorfall reagieren?", a: "Unsere Mitarbeiter sind rund um die Uhr erreichbar und können innerhalb kürzester Zeit vor Ort sein – auch außerhalb regulärer Geschäftszeiten." },
-      { q: "Sind Ihre Mitarbeiter zertifiziert?", a: "Alle unsere Sicherheitsmitarbeiter sind nach §34a GewO geprüft und nehmen regelmäßig an Fortbildungen teil, um stets auf dem neuesten Stand zu sein." },
+      { q: "Sind Ihre Mitarbeiter zertifiziert?", a: "Alle unsere Sicherheitsmitarbeiter sind nach §34a GewO ausgebildet und nehmen regelmäßig an Fortbildungen teil, um stets auf dem neuesten Stand zu sein." },
       { q: "Für welche Objekte bieten Sie Schutz an?", a: "Von Bürogebäuden über Industrieanlagen bis hin zu Logistikzentren und kommunalen Einrichtungen – wir schützen jede Art von Objekt und passen unser Konzept individuell an." },
       { q: "Kann ich meinen Schutz jederzeit anpassen?", a: "Ja, unsere Sicherheitskonzepte sind flexibel und werden regelmäßig gemeinsam mit Ihnen überprüft und bedarfsgerecht angepasst." },
       { q: "Wie unterscheidet sich Revierdienst von festem Objektschutz?", a: "Beim Revierdienst bestreift unser Personal mehrere Objekte in festgelegten Intervallen, was eine kostengünstigere Alternative zum permanenten Objektschutz darstellt – ideal für Objekte mit niedrigerem Risikoprofil." }

@@ -50,7 +50,7 @@ export default function Home() {
           <FadeIn delay={0.2} duration={0.8} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 text-white border border-primary/30 text-sm font-medium mb-6 backdrop-blur-sm shadow-sm">
               <ShieldCheck className="h-4 w-4" />
-              <span>Inhabergeführt · §34a zertifiziert · 24/7 erreichbar</span>
+              <span>Inhabergeführt · §34a ausgebildet · 24/7 erreichbar</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-[1.1] mb-4 tracking-tight">

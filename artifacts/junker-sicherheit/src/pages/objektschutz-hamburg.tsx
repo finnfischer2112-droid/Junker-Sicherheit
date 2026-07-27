@@ -59,7 +59,7 @@ const faqItems = [
   },
   {
     q: 'Sind Ihre Mitarbeiter §34a ausgebildet?',
-    a: 'Ja, alle unsere Sicherheitsmitarbeiter sind nach §34a GewO geprüft und werden regelmäßig weitergeschult. Qualifikation und Zuverlässigkeit sind für uns nicht verhandelbar.',
+    a: 'Ja, alle unsere Sicherheitsmitarbeiter sind nach §34a GewO ausgebildet und werden regelmäßig weitergeschult. Qualifikation und Zuverlässigkeit sind für uns nicht verhandelbar.',
   },
   {
     q: 'Übernehmen Sie auch kurzfristige Einsätze in Hamburg?',
@@ -471,7 +471,7 @@ export default function ObjektschutzHamburg() {
               <ul className="space-y-5 mb-10">
                 {[
                   'Persönlicher Ansprechpartner – kein Callcenter, keine Anonymität',
-                  '§34a-geprüfte, regelmäßig geschulte Sicherheitskräfte',
+                  '§34a ausgebildete, regelmäßig geschulte Sicherheitskräfte',
                   'Schnelle Reaktionszeit – wir sind in Hamburg und kennen jede Route',
                   'Maßgeschneidertes Sicherheitskonzept statt Standardlösung',
                   'Über 20 Jahre Erfahrung in der Hansestadt Hamburg',
