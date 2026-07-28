@@ -12,3 +12,63 @@ id = "yBqffJ0VVVCdJVb91_kby"
 uri = "file://.agents/outputs/objektschutz_preview.jpg"
 type = "image"
 title = "Objektschutz – Vorschau neues Bild"
+
+[[outputs]]
+id = "KQz_mTzqVycDI4Ajxswde"
+uri = "file://artifacts/junker-sicherheit/public/images/generated/hero.jpg"
+type = "image"
+title = "hero.jpg – Hafen"
+
+[[outputs]]
+id = "c7KmmiysbvQ1tbbL7zU-c"
+uri = "file://artifacts/junker-sicherheit/public/images/generated/construction.jpg"
+type = "image"
+title = "construction.jpg – Baustelle"
+
+[[outputs]]
+id = "nZSHRbTwVWpZJyvAkquVH"
+uri = "file://artifacts/junker-sicherheit/public/images/generated/event.jpg"
+type = "image"
+title = "event.jpg – Event"
+
+[[outputs]]
+id = "O46VDR5-Bk0mCQcLFR94z"
+uri = "file://artifacts/junker-sicherheit/public/images/generated/reception.jpg"
+type = "image"
+title = "reception.jpg – Empfang"
+
+[[outputs]]
+id = "0s5ZR26snat6FxIIr3eXu"
+uri = "file://artifacts/junker-sicherheit/public/images/generated/logistics.jpg"
+type = "image"
+title = "logistics.jpg – Logistik"
+
+[[outputs]]
+id = "aXG6WLX6rzMA0bgCGXSy3"
+uri = "file://artifacts/junker-sicherheit/public/images/generated/alarm.jpg"
+type = "image"
+title = "alarm.jpg – Leitstelle"
+
+[[outputs]]
+id = "ohs5p3ZNjbp6_Q6vG_Of4"
+uri = "file://artifacts/junker-sicherheit/public/images/generated/object.jpg"
+type = "image"
+title = "object.jpg – Objektschutz"
+
+[[outputs]]
+id = "jyOcsItzCJ3cZxljgVQ4t"
+uri = "file://artifacts/junker-sicherheit/public/images/generated/network.jpg"
+type = "image"
+title = "network.jpg – Netzwerk"
+
+[[outputs]]
+id = "YhWAlCq4wDc3KB9pfSqAO"
+uri = "file://artifacts/junker-sicherheit/public/images/generated/technology.jpg"
+type = "image"
+title = "technology.jpg – Technik"
+
+[[outputs]]
+id = "CrqYIbuiTKQBEgSGPD31R"
+uri = "file://artifacts/junker-sicherheit/public/images/generated/about.jpg"
+type = "image"
+title = "about.jpg – Über uns"
