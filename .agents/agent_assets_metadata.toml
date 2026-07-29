@@ -72,3 +72,39 @@ id = "CrqYIbuiTKQBEgSGPD31R"
 uri = "file://artifacts/junker-sicherheit/public/images/generated/about.jpg"
 type = "image"
 title = "about.jpg – Über uns"
+
+[[outputs]]
+id = "28eEtJWlGfwzgSJtyNTGX"
+uri = "file://.agents/outputs/hafenfest_1.jpeg"
+type = "image"
+title = "Hafenfest – Bild 1"
+
+[[outputs]]
+id = "AzDR-BJtggG5wGNOQa1Wz"
+uri = "file://.agents/outputs/hafenfest_2.png"
+type = "image"
+title = "Hafenfest – Bild 2"
+
+[[outputs]]
+id = "YKBBDbIvaAkr4X32M_-56"
+uri = "file://.agents/outputs/hafenfest_3.jpeg"
+type = "image"
+title = "Hafenfest – Bild 3"
+
+[[outputs]]
+id = "kNJdOCB1QtSF8_V8bC-4E"
+uri = "file://.agents/outputs/kreuzfahrt_1.png"
+type = "image"
+title = "Kreuzfahrt – Bild 1"
+
+[[outputs]]
+id = "emCk7fEEqPl-TKe6SCHme"
+uri = "file://.agents/outputs/kreuzfahrt_2.jpeg"
+type = "image"
+title = "Kreuzfahrt – Bild 2"
+
+[[outputs]]
+id = "SH_q6zrEhVAzwJet4y0uo"
+uri = "file://.agents/outputs/kreuzfahrt_3.jpeg"
+type = "image"
+title = "Kreuzfahrt – Bild 3"
