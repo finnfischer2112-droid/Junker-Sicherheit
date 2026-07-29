@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { X, ZoomIn } from 'lucide-react';
+import { X, ZoomIn, MapPin, CheckCircle2, Anchor, PartyPopper } from 'lucide-react';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/ui/fade-in';
 
 const pressItems = [
@@ -21,10 +21,96 @@ const pressItems = [
   },
 ];
 
-export default function Galerie() {
-  const [lightbox, setLightbox] = useState<number | null>(null);
+interface EinsatzImage {
+  src: string;
+  alt: string;
+}
 
-  const current = lightbox !== null ? pressItems[lightbox] : null;
+interface Einsatz {
+  id: number;
+  icon: React.ReactNode;
+  badge: string;
+  title: string;
+  subtitle: string;
+  location: string;
+  heroImage: string;
+  images: EinsatzImage[];
+  intro: string;
+  tasks: string[];
+  ships?: string[];
+}
+
+const einsaetze: Einsatz[] = [
+  {
+    id: 1,
+    icon: <PartyPopper className="h-5 w-5" />,
+    badge: 'Veranstaltungsschutz',
+    title: 'Hafenfest List auf Sylt',
+    subtitle: 'Seit 2024 festes Sicherheitsteam beim traditionsreichen Hafenfest',
+    location: 'List auf Sylt, Schleswig-Holstein',
+    heroImage: 'einsaetze/hafenfest_1.jpeg',
+    images: [
+      { src: 'einsaetze/hafenfest_2.png', alt: 'Hafenfest List – Impression 2' },
+      { src: 'einsaetze/hafenfest_3.jpeg', alt: 'Hafenfest List – Impression 3' },
+    ],
+    intro:
+      'Zum 20-jährigen Jubiläum des Hafenfestes in List auf Sylt im Jahr 2024 wurden wir erstmals mit der Sicherheitsbetreuung betraut. Durch unser freundliches Auftreten, professionelles Handeln und die enge Zusammenarbeit mit den örtlichen Sicherheitsorganen sind wir seitdem fester Bestandteil des jährlichen Teams vor Ort.',
+    tasks: [
+      'Streifengänge im gesamten Hafenbereich',
+      'Prävention vor Diebstahl und Sachbeschädigung',
+      'Bewachen von technischem Equipment',
+      'Vorbeugender Brandschutz',
+      'Erste-Hilfe-Maßnahmen',
+      'Ansprechpartner für Besucher, Gäste und Schausteller',
+    ],
+  },
+  {
+    id: 2,
+    icon: <Anchor className="h-5 w-5" />,
+    badge: 'Maritime Sicherheit',
+    title: 'Kreuzfahrtschiffe List auf Sylt',
+    subtitle: 'Seit über 10 Jahren verlässlicher ISPS-Sicherheitspartner im Hafen List',
+    location: 'Hafen List, Sylt',
+    heroImage: 'einsaetze/kreuzfahrt_2.jpeg',
+    images: [
+      { src: 'einsaetze/kreuzfahrt_1.png', alt: 'Kreuzfahrt List – Impression 1' },
+      { src: 'einsaetze/kreuzfahrt_3.jpeg', alt: 'Kreuzfahrt List – Impression 3' },
+    ],
+    intro:
+      'Seit mehr als 10 Jahren betreuen wir Kreuzfahrtschiffe, die in List vor Sylt auf Reede liegen. Wir sichern die Hafenanlage gemäß ISPS-Code, regeln die Zutrittskontrolle zu den Tenderbooten, führen Gepäck- und Lieferkontrollen durch und stehen den Passagieren mit Rat und Tat zur Seite. Eng arbeiten wir dabei mit dem Hafenamt (PFSO), der Polizei und dem Zoll zusammen.',
+    tasks: [
+      'Sicherung der Hafenanlage gem. ISPS-Code',
+      'Zutrittskontrolle zu den Tenderbooten',
+      'Gepäck- und Lieferkontrollen',
+      'Ansprechpartner für Kreuzfahrtpassagiere',
+      'Enge Zusammenarbeit mit Hafenamt, Polizei und Zoll',
+    ],
+    ships: ['M/S Hamburg', 'M/S Hanseatic Spirit', 'M/S Deutschland'],
+  },
+];
+
+type LightboxEntry =
+  | { kind: 'press'; index: number }
+  | { kind: 'einsatz'; einsatzId: number; imageIndex: number };
+
+export default function Galerie() {
+  const [lightbox, setLightbox] = useState<LightboxEntry | null>(null);
+
+  // Press lightbox resolution
+  const currentPress =
+    lightbox?.kind === 'press' ? pressItems[lightbox.index] : null;
+
+  // Einsatz lightbox resolution
+  const currentEinsatzData = lightbox?.kind === 'einsatz'
+    ? (() => {
+        const ez = einsaetze.find(e => e.id === lightbox.einsatzId)!;
+        const allImgs = [
+          { src: ez.heroImage, alt: ez.title },
+          ...ez.images,
+        ];
+        return { einsatz: ez, img: allImgs[lightbox.imageIndex] };
+      })()
+    : null;
 
   return (
     <div className="w-full">
@@ -66,6 +152,127 @@ export default function Galerie() {
         </div>
       </div>
 
+      {/* ── Einsätze vor Ort ── */}
+      <div className="bg-white py-20">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <FadeIn>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-slate-900 mb-3">Einsätze vor Ort</h2>
+            <p className="text-slate-500 mb-14">Ausgewählte Projekte und Dauereinsätze aus unserer täglichen Arbeit.</p>
+          </FadeIn>
+
+          <div className="space-y-24">
+            {einsaetze.map((ez, ezIdx) => {
+              const allImgs = [{ src: ez.heroImage, alt: ez.title }, ...ez.images];
+              return (
+                <StaggerContainer key={ez.id}>
+                  <div className={`grid lg:grid-cols-2 gap-12 items-start ${ezIdx % 2 === 1 ? 'lg:[&>*:first-child]:order-2' : ''}`}>
+
+                    {/* Bilder-Spalte */}
+                    <StaggerItem>
+                      <div className="space-y-3">
+                        {/* Hero-Bild */}
+                        <div
+                          className="relative rounded-2xl overflow-hidden aspect-[4/3] cursor-pointer group shadow-md"
+                          onClick={() => setLightbox({ kind: 'einsatz', einsatzId: ez.id, imageIndex: 0 })}
+                        >
+                          <img
+                            src={`${import.meta.env.BASE_URL}images/${ez.heroImage}`}
+                            alt={ez.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                            <ZoomIn className="h-10 w-10 text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-lg" />
+                          </div>
+                        </div>
+                        {/* Thumb-Reihe */}
+                        <div className="grid grid-cols-2 gap-3">
+                          {ez.images.map((img, iIdx) => (
+                            <div
+                              key={iIdx}
+                              className="relative rounded-xl overflow-hidden aspect-[4/3] cursor-pointer group shadow-sm"
+                              onClick={() => setLightbox({ kind: 'einsatz', einsatzId: ez.id, imageIndex: iIdx + 1 })}
+                            >
+                              <img
+                                src={`${import.meta.env.BASE_URL}images/${img.src}`}
+                                alt={img.alt}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                              />
+                              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                <ZoomIn className="h-7 w-7 text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-lg" />
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </StaggerItem>
+
+                    {/* Text-Spalte */}
+                    <StaggerItem>
+                      <div className="flex flex-col gap-6">
+                        {/* Badge */}
+                        <div className="flex items-center gap-2">
+                          <span className="inline-flex items-center gap-1.5 bg-primary/10 text-primary text-xs font-semibold px-3 py-1.5 rounded-full">
+                            {ez.icon}
+                            {ez.badge}
+                          </span>
+                        </div>
+
+                        <div>
+                          <h3 className="text-2xl md:text-3xl font-heading font-bold text-slate-900 mb-1">{ez.title}</h3>
+                          <p className="text-slate-500 text-sm font-medium">{ez.subtitle}</p>
+                        </div>
+
+                        {/* Standort */}
+                        <div className="flex items-center gap-2 text-slate-500 text-sm">
+                          <MapPin className="h-4 w-4 text-primary shrink-0" />
+                          <span>{ez.location}</span>
+                        </div>
+
+                        {/* Fließtext */}
+                        <p className="text-slate-600 leading-relaxed">{ez.intro}</p>
+
+                        {/* Schiffe (nur Kreuzfahrt) */}
+                        {ez.ships && (
+                          <div className="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                            <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">Betreute Schiffe</p>
+                            <div className="flex flex-wrap gap-2">
+                              {ez.ships.map(ship => (
+                                <span key={ship} className="inline-flex items-center gap-1 bg-white border border-slate-200 text-slate-700 text-sm font-medium px-3 py-1 rounded-full shadow-sm">
+                                  <Anchor className="h-3 w-3 text-primary" />
+                                  {ship}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Aufgaben */}
+                        <div>
+                          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">Unsere Aufgaben</p>
+                          <ul className="space-y-2">
+                            {ez.tasks.map(task => (
+                              <li key={task} className="flex items-start gap-2.5 text-slate-700 text-sm">
+                                <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                                {task}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </StaggerItem>
+                  </div>
+
+                  {/* Divider (not after last) */}
+                  {ezIdx < einsaetze.length - 1 && (
+                    <div className="border-b border-slate-100 mt-24" />
+                  )}
+                </StaggerContainer>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
       {/* Press Section */}
       <div className="bg-slate-50 py-20">
         <div className="container mx-auto px-4 max-w-7xl">
@@ -78,7 +285,7 @@ export default function Galerie() {
               <StaggerItem key={item.id}>
                 <div
                   className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow"
-                  onClick={() => setLightbox(index)}
+                  onClick={() => setLightbox({ kind: 'press', index })}
                 >
                   <div className="relative overflow-hidden aspect-[3/4] bg-slate-100">
                     <img
@@ -102,8 +309,8 @@ export default function Galerie() {
         </div>
       </div>
 
-      {/* Lightbox */}
-      {current && (
+      {/* Lightbox – Presse */}
+      {currentPress && (
         <div
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
           onClick={() => setLightbox(null)}
@@ -119,14 +326,43 @@ export default function Galerie() {
             onClick={e => e.stopPropagation()}
           >
             <img
-              src={`${import.meta.env.BASE_URL}images/${current.src}`}
-              alt={current.title}
+              src={`${import.meta.env.BASE_URL}images/${currentPress.src}`}
+              alt={currentPress.title}
               className="w-full h-auto rounded-t-xl"
             />
             <div className="bg-white p-6 rounded-b-xl">
-              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">{current.caption}</p>
-              <h3 className="text-xl font-heading font-bold text-slate-900 mb-2">{current.title}</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">{current.description}</p>
+              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">{currentPress.caption}</p>
+              <h3 className="text-xl font-heading font-bold text-slate-900 mb-2">{currentPress.title}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">{currentPress.description}</p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Lightbox – Einsatz */}
+      {currentEinsatzData && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+          onClick={() => setLightbox(null)}
+        >
+          <button
+            className="absolute top-4 right-4 text-white hover:text-slate-300 transition-colors"
+            onClick={() => setLightbox(null)}
+          >
+            <X className="h-8 w-8" />
+          </button>
+          <div
+            className="max-w-4xl w-full max-h-[90vh] overflow-auto rounded-xl shadow-2xl"
+            onClick={e => e.stopPropagation()}
+          >
+            <img
+              src={`${import.meta.env.BASE_URL}images/${currentEinsatzData.img.src}`}
+              alt={currentEinsatzData.img.alt}
+              className="w-full h-auto rounded-t-xl"
+            />
+            <div className="bg-white p-6 rounded-b-xl">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">{currentEinsatzData.einsatz.badge}</p>
+              <h3 className="text-xl font-heading font-bold text-slate-900">{currentEinsatzData.einsatz.title}</h3>
             </div>
           </div>
         </div>
