@@ -128,7 +128,7 @@ export const services = [
       "Arbeit nach ISPS-CODE",
       "Ausgebildete PFSOs für zielsichere Umsetzung"
     ],
-    image: "hero.jpg",
+    image: "maritime.jpg",
     usps: [
       "Zertifizierte PFSOs nach ISPS-Code",
       "Umfassende Hafengeländesicherung",
