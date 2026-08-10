@@ -17,7 +17,8 @@ title = "Objektschutz – Vorschau neues Bild"
 id = "KQz_mTzqVycDI4Ajxswde"
 uri = "file://artifacts/junker-sicherheit/public/images/generated/hero.jpg"
 type = "image"
-title = "hero.jpg – Hafen"
+title = "Hero-Bild Startseite"
+description = "Aktuelles Hero-Bild der Startseite"
 
 [[outputs]]
 id = "c7KmmiysbvQ1tbbL7zU-c"
