@@ -22,6 +22,7 @@ export default function References() {
       {/* Header */}
       <div className="bg-slate-900 py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/generated/network.jpg)` }}></div>
+        <span className="absolute bottom-2 right-3 text-[10px] italic text-white/35 z-10 pointer-events-none select-none">KI generiert</span>
         <div className="container mx-auto px-4 max-w-7xl text-center relative z-10">
           <FadeIn>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">Ein kleiner Auszug unserer Kunden</h1>

@@ -120,6 +120,7 @@ export default function Galerie() {
         <div className="absolute inset-0 opacity-10">
           <img src={`${import.meta.env.BASE_URL}images/generated/object.jpg`} alt="" className="w-full h-full object-cover" />
         </div>
+        <span className="absolute bottom-2 right-3 text-[10px] italic text-white/35 z-10 pointer-events-none select-none">KI generiert</span>
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <FadeIn>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">Galerie</h1>

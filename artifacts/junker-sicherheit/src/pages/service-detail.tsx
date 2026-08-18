@@ -40,6 +40,7 @@ export default function ServiceDetail() {
             alt={service.title}
             className="w-full h-full object-cover"
           />
+          <span className="absolute bottom-2 right-3 text-[10px] italic text-white/35 z-20 pointer-events-none select-none">KI generiert</span>
         </div>
         
         <div className="container mx-auto px-4 max-w-7xl relative z-20 py-16">

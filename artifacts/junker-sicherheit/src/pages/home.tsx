@@ -44,6 +44,7 @@ export default function Home() {
               e.currentTarget.parentElement!.style.backgroundColor = '#0f172a';
             }}
           />
+          <span className="absolute bottom-2 right-3 text-[10px] italic text-white/35 z-20 pointer-events-none select-none">KI generiert</span>
         </div>
         
         <div className="container mx-auto px-4 max-w-7xl relative z-20 pt-20 pb-24">
@@ -169,6 +170,7 @@ export default function Home() {
                     <div className="absolute top-4 left-4 z-20 bg-white/95 backdrop-blur-sm p-2.5 rounded-xl text-primary shadow-lg">
                       <service.icon className="h-6 w-6" />
                     </div>
+                    <span className="absolute bottom-1.5 right-2 text-[10px] italic text-white/40 z-20 pointer-events-none select-none">KI generiert</span>
                   </div>
                   <div className="p-6 flex-1 flex flex-col">
                     <h3 className="text-xl font-heading font-bold text-slate-900 mb-2 group-hover:text-primary transition-colors">{service.title}</h3>

@@ -321,6 +321,7 @@ export default function ObjektschutzNorddeutschland() {
             className="w-full h-full object-cover object-center"
             onError={(e) => { e.currentTarget.style.display = 'none'; }}
           />
+          <span className="absolute bottom-2 right-3 text-[10px] italic text-white/35 z-20 pointer-events-none select-none">KI generiert</span>
         </div>
 
         <div className="container mx-auto px-4 max-w-7xl relative z-20 pt-24 pb-28">
@@ -469,6 +470,7 @@ export default function ObjektschutzNorddeutschland() {
               <div className="absolute bottom-5 left-5 bg-primary text-white px-5 py-3 rounded-xl font-semibold shadow-lg text-sm">
                 Ihr Partner in Norddeutschland
               </div>
+              <span className="absolute bottom-2 right-2 text-[10px] italic text-white/40 z-20 pointer-events-none select-none">KI generiert</span>
             </FadeIn>
           </div>
         </div>
