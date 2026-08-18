@@ -70,6 +70,7 @@ export default function Contact() {
     <div className="w-full bg-slate-50 min-h-screen pb-24">
       <div className="bg-slate-900 py-20 mb-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/generated/reception.jpg)` }}></div>
+        <span className="absolute bottom-2 right-3 text-[10px] italic text-white/35 z-10 pointer-events-none select-none">KI generiert</span>
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <FadeIn>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">Sicherheitsdienst aus Hasloh kontaktieren – Kostenlose Erstberatung</h1>
