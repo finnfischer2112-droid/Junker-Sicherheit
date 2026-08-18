@@ -14,6 +14,7 @@ export default function Services() {
         <div className="absolute inset-0 opacity-20">
           <img src={`${import.meta.env.BASE_URL}images/generated/event.jpg`} alt="" className="w-full h-full object-cover" />
         </div>
+        <span className="absolute bottom-2 right-3 text-[10px] italic text-white/35 z-10 pointer-events-none select-none">KI generiert</span>
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <FadeIn>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">Sicherheitsdienstleistungen in Hamburg & Norddeutschland</h1>
@@ -51,6 +52,7 @@ export default function Services() {
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent lg:hidden"></div>
+                    <span className="absolute bottom-1.5 right-2 text-[10px] italic text-white/40 z-10 pointer-events-none select-none">KI generiert</span>
                   </div>
 
                   <div className="p-8 lg:p-12 lg:w-3/5 flex flex-col justify-center">
