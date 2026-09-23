@@ -28,8 +28,16 @@ services:
           name: junker-sicherheit-db
           property: connectionString
       - key: CONTACT_EMAIL
-        sync: false
+        value: g.junker@junker-sicherheit.de
       - key: CONTACT_FROM_EMAIL
-        sync: false
-      - key: RESEND_API_KEY
+        value: Junker-Sicherheit <g.junker@junker-sicherheit.de>
+      - key: SMTP_HOST
+        value: smtp.ionos.de
+      - key: SMTP_PORT
+        value: "465"
+      - key: SMTP_SECURE
+        value: "true"
+      - key: SMTP_USER
+        value: g.junker@junker-sicherheit.de
+      - key: SMTP_PASSWORD
         sync: false

@@ -33,3 +33,13 @@ externalPort = 8081
 [[ports]]
 localPort = 25726
 externalPort = 80
+
+[userenv]
+
+[userenv.shared]
+CONTACT_EMAIL = "g.junker@junker-sicherheit.de"
+CONTACT_FROM_EMAIL = "Junker-Sicherheit <g.junker@junker-sicherheit.de>"
+SMTP_HOST = "smtp.ionos.de"
+SMTP_PORT = "465"
+SMTP_SECURE = "true"
+SMTP_USER = "g.junker@junker-sicherheit.de"

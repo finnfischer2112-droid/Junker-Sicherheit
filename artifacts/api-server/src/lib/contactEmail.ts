@@ -1,3 +1,4 @@
+import nodemailer from "nodemailer";
 import { logger } from "./logger";
 
 type ContactEmailData = {
@@ -22,17 +23,30 @@ function optionalValue(value?: string) {
 }
 
 export async function sendContactEmail(data: ContactEmailData) {
-  const apiKey = process.env["RESEND_API_KEY"];
+  const host = process.env["SMTP_HOST"];
+  const port = Number(process.env["SMTP_PORT"] ?? "465");
+  const secure = process.env["SMTP_SECURE"] !== "false";
+  const user = process.env["SMTP_USER"];
+  const password = process.env["SMTP_PASSWORD"];
   const recipient = process.env["CONTACT_EMAIL"];
-  const sender =
-    process.env["CONTACT_FROM_EMAIL"] ??
-    "Junker-Sicherheit <onboarding@resend.dev>";
+  const sender = process.env["CONTACT_FROM_EMAIL"] ?? user;
 
-  if (!apiKey || !recipient) {
+  if (
+    !host ||
+    !Number.isInteger(port) ||
+    !user ||
+    !password ||
+    !recipient ||
+    !sender
+  ) {
     logger.warn(
       {
-        hasResendApiKey: Boolean(apiKey),
+        hasSmtpHost: Boolean(host),
+        hasValidSmtpPort: Number.isInteger(port),
+        hasSmtpUser: Boolean(user),
+        hasSmtpPassword: Boolean(password),
         hasContactEmail: Boolean(recipient),
+        hasContactFromEmail: Boolean(sender),
       },
       "Contact email not sent because email configuration is incomplete",
     );
@@ -43,44 +57,40 @@ export async function sendContactEmail(data: ContactEmailData) {
     ? `Neue Kontaktanfrage: ${data.subject.trim()}`
     : "Neue Kontaktanfrage über junker-sicherheit.de";
 
-  const response = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
+  const transporter = nodemailer.createTransport({
+    host,
+    port,
+    secure,
+    auth: {
+      user,
+      pass: password,
     },
-    body: JSON.stringify({
-      from: sender,
-      to: [recipient],
-      reply_to: data.email,
-      subject,
-      html: `
-        <h1>Neue Kontaktanfrage</h1>
-        <p><strong>Name/Firma:</strong> ${escapeHtml(data.name)}</p>
-        <p><strong>E-Mail:</strong> ${escapeHtml(data.email)}</p>
-        <p><strong>Telefon:</strong> ${optionalValue(data.phone)}</p>
-        <p><strong>Betreff:</strong> ${optionalValue(data.subject)}</p>
-        <p><strong>Nachricht:</strong></p>
-        <p>${escapeHtml(data.message).replaceAll("\n", "<br>")}</p>
-      `,
-      text: [
-        "Neue Kontaktanfrage",
-        "",
-        `Name/Firma: ${data.name}`,
-        `E-Mail: ${data.email}`,
-        `Telefon: ${data.phone?.trim() || "Nicht angegeben"}`,
-        `Betreff: ${data.subject?.trim() || "Nicht angegeben"}`,
-        "",
-        "Nachricht:",
-        data.message,
-      ].join("\n"),
-    }),
   });
 
-  if (!response.ok) {
-    const responseBody = await response.text();
-    throw new Error(
-      `Resend rejected contact email with status ${response.status}: ${responseBody.slice(0, 500)}`,
-    );
-  }
+  await transporter.sendMail({
+    from: sender,
+    to: recipient,
+    replyTo: data.email,
+    subject,
+    html: `
+      <h1>Neue Kontaktanfrage</h1>
+      <p><strong>Name/Firma:</strong> ${escapeHtml(data.name)}</p>
+      <p><strong>E-Mail:</strong> ${escapeHtml(data.email)}</p>
+      <p><strong>Telefon:</strong> ${optionalValue(data.phone)}</p>
+      <p><strong>Betreff:</strong> ${optionalValue(data.subject)}</p>
+      <p><strong>Nachricht:</strong></p>
+      <p>${escapeHtml(data.message).replaceAll("\n", "<br>")}</p>
+    `,
+    text: [
+      "Neue Kontaktanfrage",
+      "",
+      `Name/Firma: ${data.name}`,
+      `E-Mail: ${data.email}`,
+      `Telefon: ${data.phone?.trim() || "Nicht angegeben"}`,
+      `Betreff: ${data.subject?.trim() || "Nicht angegeben"}`,
+      "",
+      "Nachricht:",
+      data.message,
+    ].join("\n"),
+  });
 }
