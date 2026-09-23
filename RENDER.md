@@ -27,6 +27,24 @@ database schema, builds the frontend and API, and starts the API server.
 - Do not override the Blueprint build or start commands.
 - Render supplies `PORT` automatically at runtime.
 - `DATABASE_URL` is linked from the Blueprint database.
+- `CONTACT_EMAIL` is the address that receives contact-form notifications.
+- `CONTACT_FROM_EMAIL` is a verified Resend sender address.
+- `RESEND_API_KEY` is created in Resend and stored only as a Render secret.
+
+## Contact-form email
+
+Create a Resend account and API key, then add these environment variables to
+the Render Web Service:
+
+```text
+CONTACT_EMAIL=f.fischer@almaron.de
+CONTACT_FROM_EMAIL=Junker-Sicherheit <onboarding@resend.dev>
+RESEND_API_KEY=<your Resend API key>
+```
+
+The Resend test sender is suitable for initial testing. For production delivery
+to arbitrary recipients, verify a sending domain in Resend and replace
+`CONTACT_FROM_EMAIL` with an address on that domain.
 
 ## Local production verification
 

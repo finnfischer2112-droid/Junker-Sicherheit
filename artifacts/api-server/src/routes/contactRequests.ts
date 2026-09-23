@@ -5,6 +5,8 @@ import {
   CreateContactRequestBody,
   CreateContactRequestResponse,
 } from "@workspace/api-zod";
+import { sendContactEmail } from "../lib/contactEmail";
+import { logger } from "../lib/logger";
 
 const router: IRouter = Router();
 
@@ -28,9 +30,9 @@ router.post("/contact-requests", async (req, res) => {
     return;
   }
   if (!parsed.data.consent) {
-    res
-      .status(400)
-      .json({ message: "Die Einwilligung zur Datenverarbeitung ist erforderlich" });
+    res.status(400).json({
+      message: "Die Einwilligung zur Datenverarbeitung ist erforderlich",
+    });
     return;
   }
   const [row] = await db
@@ -44,6 +46,22 @@ router.post("/contact-requests", async (req, res) => {
       consent: parsed.data.consent,
     })
     .returning();
+
+  try {
+    await sendContactEmail({
+      name: parsed.data.name,
+      email: parsed.data.email,
+      phone: parsed.data.phone,
+      subject: parsed.data.subject,
+      message: parsed.data.message,
+    });
+  } catch (error) {
+    logger.error(
+      { err: error, contactRequestId: row.id },
+      "Contact request was stored but email notification failed",
+    );
+  }
+
   res.status(201).json(CreateContactRequestResponse.parse(serialize(row)));
 });
 

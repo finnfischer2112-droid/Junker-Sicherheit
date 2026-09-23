@@ -27,3 +27,9 @@ services:
         fromDatabase:
           name: junker-sicherheit-db
           property: connectionString
+      - key: CONTACT_EMAIL
+        sync: false
+      - key: CONTACT_FROM_EMAIL
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
