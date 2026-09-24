@@ -37,7 +37,7 @@ externalPort = 80
 [userenv]
 
 [userenv.shared]
-CONTACT_EMAIL = "g.junker@junker-sicherheit.de"
+CONTACT_EMAIL = "info@junker-sicherheit.de"
 CONTACT_FROM_EMAIL = "Junker-Sicherheit <g.junker@junker-sicherheit.de>"
 SMTP_HOST = "smtp.ionos.de"
 SMTP_PORT = "465"

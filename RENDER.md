@@ -36,7 +36,7 @@ database schema, builds the frontend and API, and starts the API server.
 Add these environment variables to the Render Web Service:
 
 ```text
-CONTACT_EMAIL=g.junker@junker-sicherheit.de
+CONTACT_EMAIL=info@junker-sicherheit.de
 CONTACT_FROM_EMAIL=Junker-Sicherheit <g.junker@junker-sicherheit.de>
 SMTP_HOST=smtp.ionos.de
 SMTP_PORT=465

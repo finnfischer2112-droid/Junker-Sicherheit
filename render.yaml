@@ -28,7 +28,7 @@ services:
           name: junker-sicherheit-db
           property: connectionString
       - key: CONTACT_EMAIL
-        value: g.junker@junker-sicherheit.de
+        value: info@junker-sicherheit.de
       - key: CONTACT_FROM_EMAIL
         value: Junker-Sicherheit <g.junker@junker-sicherheit.de>
       - key: SMTP_HOST
