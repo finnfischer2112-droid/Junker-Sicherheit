@@ -45,6 +45,7 @@ export const CreateContactRequestBody = zod.object({
 
 export const CreateContactRequestResponse = zod.object({
   "id": zod.string(),
+  "notificationSent": zod.boolean(),
   "name": zod.string(),
   "email": zod.string(),
   "phone": zod.string().nullish(),

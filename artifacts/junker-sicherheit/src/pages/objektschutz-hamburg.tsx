@@ -115,6 +115,7 @@ function KontaktFormular() {
   const { toast } = useToast();
   const createContact = useCreateContactRequest();
   const [submitted, setSubmitted] = useState(false);
+  const [notificationSent, setNotificationSent] = useState(true);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -131,10 +132,14 @@ function KontaktFormular() {
     createContact.mutate(
       { data: { ...values, subject: 'Objektschutz Hamburg – Landingpage Anfrage', message: values.message ?? '' } },
       {
-        onSuccess: () => {
+        onSuccess: (result) => {
+          setNotificationSent(result.notificationSent);
           toast({
-            title: 'Anfrage gesendet!',
-            description: 'Vielen Dank. Wir melden uns innerhalb von 2 Stunden bei Ihnen.',
+            title: result.notificationSent ? 'Anfrage gesendet!' : 'Anfrage gespeichert',
+            description: result.notificationSent
+              ? 'Vielen Dank. Wir melden uns innerhalb von 2 Stunden bei Ihnen.'
+              : 'Die E-Mail-Benachrichtigung ist fehlgeschlagen. Bitte rufen Sie uns an, wenn Ihre Anfrage dringend ist. Bitte senden Sie das Formular nicht erneut.',
+            variant: result.notificationSent ? 'default' : 'destructive',
           });
           form.reset();
           setSubmitted(true);
@@ -156,7 +161,9 @@ function KontaktFormular() {
         <CheckCircle2 className="h-16 w-16 text-primary mx-auto mb-4" />
         <h3 className="text-2xl font-heading font-bold text-white mb-2">Anfrage eingegangen!</h3>
         <p className="text-slate-300">
-          Vielen Dank für Ihre Anfrage. Wir melden uns innerhalb von 2 Stunden persönlich bei Ihnen.
+          {notificationSent
+            ? 'Vielen Dank für Ihre Anfrage. Wir melden uns innerhalb von 2 Stunden persönlich bei Ihnen.'
+            : 'Ihre Anfrage wurde gespeichert, aber die E-Mail-Benachrichtigung ist fehlgeschlagen. Bitte rufen Sie uns bei dringenden Anliegen an. Bitte senden Sie das Formular nicht erneut.'}
         </p>
       </div>
     );

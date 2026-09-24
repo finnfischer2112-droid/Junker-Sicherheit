@@ -50,7 +50,7 @@ export async function sendContactEmail(data: ContactEmailData) {
       },
       "Contact email not sent because email configuration is incomplete",
     );
-    return;
+    throw new Error("Contact email configuration is incomplete");
   }
 
   const subject = data.subject?.trim()
@@ -61,6 +61,10 @@ export async function sendContactEmail(data: ContactEmailData) {
     host,
     port,
     secure,
+    connectionTimeout: 8000,
+    greetingTimeout: 8000,
+    socketTimeout: 8000,
+    dnsTimeout: 8000,
     auth: {
       user,
       pass: password,

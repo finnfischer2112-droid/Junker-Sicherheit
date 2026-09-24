@@ -1,0 +1,1 @@
+- [Render SMTP limitation](render-smtp.md) — Free Web Services block outbound SMTP; check the service compute plan before diagnosing credentials.

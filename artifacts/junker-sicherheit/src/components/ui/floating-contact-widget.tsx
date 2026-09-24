@@ -24,6 +24,7 @@ type FormValues = z.infer<typeof schema>;
 export function FloatingContactWidget() {
   const [open, setOpen]       = useState(false);
   const [done, setDone]       = useState(false);
+  const [notificationSent, setNotificationSent] = useState(true);
   const [visible, setVisible] = useState(false);
   const createContact = useCreateContactRequest();
 
@@ -51,7 +52,11 @@ export function FloatingContactWidget() {
   function onSubmit(values: FormValues) {
     createContact.mutate(
       { data: { ...values, subject: 'Widget-Anfrage', message: values.message ?? '', consent: true } },
-      { onSuccess: () => { setDone(true); form.reset(); } },
+      { onSuccess: (result) => {
+        setNotificationSent(result.notificationSent);
+        setDone(true);
+        form.reset();
+      } },
     );
   }
 
@@ -98,7 +103,11 @@ export function FloatingContactWidget() {
                     >
                       <CheckCircle2 className="h-12 w-12 text-primary mx-auto mb-3" />
                       <p className="font-heading font-bold text-slate-900 mb-1">Vielen Dank!</p>
-                      <p className="text-slate-500 text-sm">Wir melden uns schnellstmöglich bei Ihnen.</p>
+                      <p className="text-slate-500 text-sm">
+                        {notificationSent
+                          ? 'Wir melden uns schnellstmöglich bei Ihnen.'
+                          : 'Ihre Anfrage wurde gespeichert, aber die E-Mail-Benachrichtigung ist fehlgeschlagen. Bitte rufen Sie uns bei dringenden Anliegen an. Bitte senden Sie das Formular nicht erneut.'}
+                      </p>
                       <Button
                         size="sm" variant="outline" className="mt-4"
                         onClick={() => { setDone(false); setOpen(false); }}

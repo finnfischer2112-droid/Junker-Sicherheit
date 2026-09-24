@@ -7,7 +7,7 @@ services:
   - type: web
     name: junker-sicherheit
     runtime: node
-    plan: free
+    plan: 0.5c-512mb
     region: frankfurt
     autoDeployTrigger: commit
     buildCommand: >-

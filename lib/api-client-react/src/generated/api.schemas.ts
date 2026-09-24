@@ -38,6 +38,7 @@ export interface ContactRequestInput {
 
 export interface ContactRequest {
   id: string;
+  notificationSent: boolean;
   name: string;
   email: string;
   phone?: string | null;

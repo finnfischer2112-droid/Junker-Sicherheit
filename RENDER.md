@@ -47,6 +47,14 @@ SMTP_PASSWORD=<IONOS mailbox password>
 
 Store `SMTP_PASSWORD` as a secret. Do not commit it to the repository.
 
+IONOS SMTP on port 465 requires a **paid Render Web Service compute plan**.
+Render's Free web services block outbound SMTP ports 25, 465 and 587. For a
+manually configured service, open its **Compute** page in Render, click **Edit**,
+select a paid compute plan and save. Changing `render.yaml` alone does not
+update a manually configured Render service. If sending fails, the contact
+request remains stored in PostgreSQL and the form reports the notification
+failure rather than waiting indefinitely.
+
 ## Local production verification
 
 From the repository root:

@@ -6,7 +6,6 @@ import {
   CreateContactRequestResponse,
 } from "@workspace/api-zod";
 import { sendContactEmail } from "../lib/contactEmail";
-import { logger } from "../lib/logger";
 
 const router: IRouter = Router();
 
@@ -47,6 +46,7 @@ router.post("/contact-requests", async (req, res) => {
     })
     .returning();
 
+  let notificationSent = false;
   try {
     await sendContactEmail({
       name: parsed.data.name,
@@ -55,14 +55,20 @@ router.post("/contact-requests", async (req, res) => {
       subject: parsed.data.subject,
       message: parsed.data.message,
     });
+    notificationSent = true;
   } catch (error) {
-    logger.error(
+    req.log.error(
       { err: error, contactRequestId: row.id },
       "Contact request was stored but email notification failed",
     );
   }
 
-  res.status(201).json(CreateContactRequestResponse.parse(serialize(row)));
+  res.status(201).json(
+    CreateContactRequestResponse.parse({
+      ...serialize(row),
+      notificationSent,
+    }),
+  );
 });
 
 export default router;

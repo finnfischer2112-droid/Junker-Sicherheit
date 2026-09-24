@@ -49,10 +49,13 @@ export default function Contact() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     createContact.mutate({ data: values }, {
-      onSuccess: () => {
+      onSuccess: (result) => {
         toast({
-          title: "Nachricht gesendet",
-          description: "Vielen Dank für Ihre Anfrage. Wir werden uns umgehend bei Ihnen melden.",
+          title: result.notificationSent ? "Nachricht gesendet" : "Anfrage gespeichert",
+          description: result.notificationSent
+            ? "Vielen Dank für Ihre Anfrage. Wir werden uns umgehend bei Ihnen melden."
+            : "Die E-Mail-Benachrichtigung ist fehlgeschlagen. Bitte rufen Sie uns an, wenn Ihre Anfrage dringend ist. Bitte senden Sie das Formular nicht erneut.",
+          variant: result.notificationSent ? "default" : "destructive",
         });
         form.reset();
       },
