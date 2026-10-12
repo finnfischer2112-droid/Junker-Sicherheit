@@ -37,14 +37,13 @@ export function AdvertisingConsent() {
             id="advertising-consent-title"
             className="font-heading text-lg font-bold text-slate-900"
           >
-            Einwilligung zur Werbemessung
+            Cookies
           </h2>
           <p className="mt-1 text-sm text-slate-600">
-            Mit Ihrer Zustimmung nutzen wir Google Ads, um den Erfolg unserer
-            Werbekampagnen zu messen. Dabei können Cookies und Daten an Google
-            übermittelt werden. Ohne Zustimmung wird der Google-Tag nicht
-            geladen. Ihre Wahl können Sie jederzeit über „Cookie-Einstellungen“
-            ändern.{" "}
+            Mit Ihrer Zustimmung verwenden wir Cookies von Google Ads, um den
+            Erfolg unserer Kampagnen zu messen. Dabei werden Daten an Google
+            übermittelt. Ihre Auswahl können Sie jederzeit in den
+            Cookie-Einstellungen ändern.{" "}
             <Link href="/datenschutz" className="underline hover:text-primary">
               Datenschutz
             </Link>
@@ -52,10 +51,10 @@ export function AdvertisingConsent() {
         </div>
         <div className="flex shrink-0 flex-wrap gap-3">
           <Button variant="outline" onClick={() => choose("denied")}>
-            Werbemessung ablehnen
+            Nur notwendige
           </Button>
           <Button variant="outline" onClick={() => choose("granted")}>
-            Werbemessung erlauben
+            Alle akzeptieren
           </Button>
         </div>
       </div>
