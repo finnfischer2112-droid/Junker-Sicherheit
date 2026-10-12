@@ -6,6 +6,8 @@ import { cn } from '@/lib/utils';
 import { services } from '@/data/services';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FloatingContactWidget } from '@/components/ui/floating-contact-widget';
+import { AdvertisingConsent } from '@/components/advertising-consent';
+import { openAdsSettings } from '@/lib/google-ads';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
@@ -402,15 +404,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
           
           <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
             <div>&copy; {new Date().getFullYear()} Junker-Sicherheit. Alle Rechte vorbehalten.</div>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
               <Link href="/impressum" className="hover:text-white transition-colors">Impressum</Link>
               <Link href="/datenschutz" className="hover:text-white transition-colors">Datenschutz</Link>
+              <button type="button" onClick={openAdsSettings} className="hover:text-white transition-colors">
+                Cookie-Einstellungen
+              </button>
             </div>
           </div>
         </div>
       </footer>
 
       <FloatingContactWidget />
+      <AdvertisingConsent />
     </div>
   );
 }
