@@ -109,7 +109,7 @@ export default function Home() {
               </div>
               <div className="text-center">
                 <div className="font-heading font-bold text-slate-900">Günter Junker</div>
-                <div className="text-sm text-slate-500">Inhaber &amp; Geschäftsführer</div>
+                <div className="text-sm text-slate-500">Inhaber</div>
               </div>
             </FadeIn>
             

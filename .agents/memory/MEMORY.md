@@ -1,1 +1,2 @@
 - [Render SMTP limitation](render-smtp.md) — Free Web Services block outbound SMTP; check the service compute plan before diagnosing credentials.
+- [Unternehmensbezeichnung](company-designation.md) — Die Unternehmensleitung als Inhaber, nicht als Geschäftsführer bezeichnen.
