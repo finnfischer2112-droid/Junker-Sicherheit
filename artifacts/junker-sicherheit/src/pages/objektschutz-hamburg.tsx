@@ -31,6 +31,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { useCreateContactRequest } from '@workspace/api-client-react';
+import { ADS_CONV_FORM, trackAdsConversion } from '@/lib/adsConversion';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/ui/fade-in';
 import { TrustBar } from '@/components/ui/trust-bar';
 import { GoogleRatingBadge } from '@/components/ui/google-rating-badge';
@@ -133,6 +134,7 @@ function KontaktFormular() {
       { data: { ...values, subject: 'Objektschutz Hamburg – Landingpage Anfrage', message: values.message ?? '' } },
       {
         onSuccess: (result) => {
+          trackAdsConversion(ADS_CONV_FORM);
           setNotificationSent(result.notificationSent);
           toast({
             title: result.notificationSent ? 'Anfrage gesendet!' : 'Anfrage gespeichert',

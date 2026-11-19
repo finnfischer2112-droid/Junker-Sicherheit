@@ -18,6 +18,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import { useCreateContactRequest } from "@workspace/api-client-react";
+import { ADS_CONV_FORM, trackAdsConversion } from "@/lib/adsConversion";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/fade-in";
 
 const formSchema = z.object({
@@ -50,6 +51,7 @@ export default function Contact() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     createContact.mutate({ data: values }, {
       onSuccess: (result) => {
+        trackAdsConversion(ADS_CONV_FORM);
         toast({
           title: result.notificationSent ? "Nachricht gesendet" : "Anfrage gespeichert",
           description: result.notificationSent

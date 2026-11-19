@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
@@ -15,6 +16,7 @@ import Imprint from '@/pages/imprint';
 import Privacy from '@/pages/privacy';
 import Karriere from '@/pages/karriere';
 import Galerie from '@/pages/galerie';
+import { installPhoneConversionTracking } from '@/lib/adsConversion';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -47,6 +49,8 @@ function Router() {
 }
 
 function App() {
+  useEffect(() => installPhoneConversionTracking(), []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>

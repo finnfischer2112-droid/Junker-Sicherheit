@@ -11,6 +11,7 @@ import {
   Form, FormControl, FormField, FormItem, FormLabel, FormMessage,
 } from '@/components/ui/form';
 import { useCreateContactRequest } from '@workspace/api-client-react';
+import { ADS_CONV_FORM, trackAdsConversion } from '@/lib/adsConversion';
 import { cn } from '@/lib/utils';
 
 const schema = z.object({
@@ -53,6 +54,7 @@ export function FloatingContactWidget() {
     createContact.mutate(
       { data: { ...values, subject: 'Widget-Anfrage', message: values.message ?? '', consent: true } },
       { onSuccess: (result) => {
+        trackAdsConversion(ADS_CONV_FORM);
         setNotificationSent(result.notificationSent);
         setDone(true);
         form.reset();
